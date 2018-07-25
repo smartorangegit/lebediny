@@ -1,0 +1,155 @@
+// July 2018 Lybediny Begas Anna
+
+@import "compass/reset";
+@import "_variables";
+@import "_slider";
+
+body{
+  font-family: $avenir;
+  color: $blue;
+}
+img{
+  width: 100%;
+  height: auto;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+.heavy{
+  font-weight: 900;
+}
+
+.flex{
+  @include flex;
+}
+.yellow{
+  color: $yellow;
+}
+.blue{
+  color:  $blue;
+}
+.wrapper{
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+.content_name{
+  font-size: 60px;
+  color: white;
+  text-shadow: 3px 3px 4px rgba(0,0,0,0.4);
+}
+.nav{
+  width: 100%;
+  padding: 10px 0;
+  background: rgba(0,0,0,.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  color: white;
+  font-size: 16px;
+}
+.nav .wrapper{
+  position: relative;
+}
+.nav_menu{
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  font-size: 12px;
+  text-transform: lowercase;
+  height: 28px;
+  align-items: flex-start;
+  -webkit-align-items: flex-start;
+  color: $yellow;
+}
+.menu_line{
+  height: 1.5px;
+  background: #fff;
+}
+.menu_line_1{
+  width: 38px;
+}
+.menu_line_2{
+  width: 27px;
+  background-color: $yellow;
+}
+.menu_line_3{
+  width: 45px;
+}
+.border_link{
+  display: block;
+  padding: 6px 10px;
+  border: 1px solid $yellow;
+  color: $yellow;
+  text-transform: lowercase;
+}
+.webkam_item svg{
+  display: inline-block;
+  vertical-align: bottom;
+
+}
+.left_nav, .right_nav{
+  width: 35%;
+}
+.nav_logo{
+  width: 220px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+}
+.lang_select .active{
+  font-weight: 500;
+  color: $yellow;
+}
+.header{
+  height: 100vh;
+  width: 100%;
+}
+.gallery__item{
+  height: 100vh;
+}
+.gitem__1{
+  background: url('/img/main/bg-1.jpg')  center no-repeat;
+  background-size: cover;
+}
+.gitem__2{
+  background: url('/img/gallery/gallery-3.jpg')  center no-repeat;
+  background-size: cover;
+}
+.gitem__3{
+  background: url('/img/gallery/gallery-9.jpg')  center no-repeat;
+  background-size: cover;
+}
+.header_box{
+  position: absolute;
+  width: 100%;
+  max-width: 940px;
+  top: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+}
+.header_minutes {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  display: -webkit-flex;
+  -webkit-align-items: center;
+  line-height: 1.5;
+  .number{
+    font-size: 100px;
+  }
+  .yellow{
+    font-weight: bold;
+  }
+}
+.header_minutes_info{
+  padding-left: 10px;
+
+}
+.slider_prev, .slider_next{
+  cursor: pointer;
+}

@@ -1,0 +1,496 @@
+/* line 5, C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+@font-face {
+  font-family: 'Avenir Next Cyr';
+  src: url("/fonts/AvenirNextCyr-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Avenir Next Cyr';
+  src: url("/fonts/AvenirNextCyr-Demi.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Avenir Next Cyr';
+  src: url("/fonts/AvenirNextCyr-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Avenir Next Cyr';
+  src: url("/fonts/AvenirNextCyr-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Avenir Next Cyr Ultra';
+  src: url("/fonts/AvenirNextCyr-UltraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Avenir Next Cyr';
+  src: url("/fonts/AvenirNextCyr-Heavy.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Avenir Next Cyr';
+  src: url("/fonts/AvenirNextCyr-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Avenir Next Cyr';
+  src: url("/fonts/AvenirNextCyr-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+/** VARIABLES
+===================================*/
+/** RESET AND LAYOUT
+===================================*/
+/* line 5, ../sass/_slider.scss */
+.bx-wrapper {
+  position: relative;
+  margin-bottom: 60px;
+  *zoom: 1;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  height: 100%;
+  margin: 0 auto;
+}
+
+/* line 15, ../sass/_slider.scss */
+.bx-wrapper img {
+  max-width: 100%;
+  display: block;
+  min-height: 100%;
+}
+
+/* line 20, ../sass/_slider.scss */
+.bxslider {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 24, ../sass/_slider.scss */
+ul.bxslider {
+  list-style: none;
+}
+
+/* line 27, ../sass/_slider.scss */
+.bx-viewport {
+  /*fix other elements on the page moving (on Chrome)*/
+  -webkit-transform: translatez(0);
+}
+
+/** THEME
+===================================*/
+/* line 34, ../sass/_slider.scss */
+.bx-wrapper .bx-pager,
+.bx-wrapper .bx-controls-auto {
+  position: absolute;
+  bottom: -30px;
+  width: 100%;
+}
+
+/* DIRECTION CONTROLS (NEXT / PREV) */
+/* line 41, ../sass/_slider.scss */
+.bx-wrapper .bx-prev {
+  left: 70px;
+}
+
+/* line 44, ../sass/_slider.scss */
+.bx-wrapper .bx-next {
+  right: 70px;
+}
+
+/* line 47, ../sass/_slider.scss */
+.bx-wrapper .bx-prev,
+.bx-wrapper .bx-next {
+  background: rgba(255, 255, 255, 0.8);
+  transition: 0.36s;
+  -webkit-transition: 0.36s;
+}
+/* line 52, ../sass/_slider.scss */
+.bx-wrapper .bx-prev svg,
+.bx-wrapper .bx-next svg {
+  fill: red;
+}
+
+/* line 56, ../sass/_slider.scss */
+.bx-wrapper .bx-prev:hover,
+.bx-wrapper .bx-next:hover {
+  background: rgba(238, 28, 37, 0.8);
+}
+/* line 59, ../sass/_slider.scss */
+.bx-wrapper .bx-prev:hover svg,
+.bx-wrapper .bx-next:hover svg {
+  fill: #fff;
+}
+
+/* line 63, ../sass/_slider.scss */
+.bx-wrapper .bx-controls-direction a {
+  position: absolute;
+  top: 50%;
+  margin-top: -35px;
+  outline: 0;
+  width: 50px;
+  height: 50px;
+  z-index: 2;
+  padding: 16px;
+  border-radius: 100%;
+}
+
+/* line 74, ../sass/_slider.scss */
+.bx-wrapper .bx-controls-direction a svg {
+  width: 100%;
+  height: 100%;
+  max-width: 18px;
+  max-height: 18px;
+}
+
+/* line 80, ../sass/_slider.scss */
+.bx-wrapper .bx-controls-direction a.disabled {
+  display: none;
+}
+
+/* AUTO CONTROLS (START / STOP) */
+/* line 84, ../sass/_slider.scss */
+.bx-wrapper .bx-controls-auto {
+  text-align: center;
+}
+
+/* PAGER WITH AUTO-CONTROLS HYBRID LAYOUT */
+/* line 88, ../sass/_slider.scss */
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
+  text-align: left;
+  width: 80%;
+}
+
+/* line 92, ../sass/_slider.scss */
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {
+  right: 0;
+  width: 35px;
+}
+
+/* IMAGE CAPTIONS */
+/* line 97, ../sass/_slider.scss */
+.bx-wrapper .bx-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  min-height: 60px;
+  text-align: center;
+  line-height: 1.4;
+  background: rgba(255, 255, 255, 0.8);
+  opacity: 0.85;
+  pointer-events: none;
+}
+
+/* line 109, ../sass/_slider.scss */
+.bx-wrapper .bx-caption span {
+  display: block;
+  font-size: .85em;
+  padding: 10px;
+  color: #000;
+}
+
+/* line 115, ../sass/_slider.scss */
+.slider__item {
+  position: relative;
+}
+
+/* line 118, ../sass/_slider.scss */
+.slider__caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  padding: 24px 0;
+  font-size: 13px;
+  font-family: inherit;
+  color: white;
+}
+
+/* line 7, ../sass/style.scss */
+body {
+  font-family: "Avenir Next Cyr";
+  color: #344162;
+}
+
+/* line 11, ../sass/style.scss */
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* line 15, ../sass/style.scss */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* line 19, ../sass/style.scss */
+.heavy {
+  font-weight: 900;
+}
+
+/* line 23, ../sass/style.scss */
+.flex {
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+  align-items: center;
+  -webkit-align-items: center;
+}
+
+/* line 26, ../sass/style.scss */
+.yellow {
+  color: #fdf4b2;
+}
+
+/* line 29, ../sass/style.scss */
+.blue {
+  color: #344162;
+}
+
+/* line 32, ../sass/style.scss */
+.wrapper {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+/* line 38, ../sass/style.scss */
+.content_name {
+  font-size: 60px;
+  color: white;
+  text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.4);
+}
+
+/* line 43, ../sass/style.scss */
+.nav {
+  width: 100%;
+  padding: 10px 0;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  color: white;
+  font-size: 16px;
+}
+
+/* line 54, ../sass/style.scss */
+.nav .wrapper {
+  position: relative;
+}
+
+/* line 57, ../sass/style.scss */
+.nav_menu {
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  font-size: 12px;
+  text-transform: lowercase;
+  height: 28px;
+  align-items: flex-start;
+  -webkit-align-items: flex-start;
+  color: #fdf4b2;
+}
+
+/* line 67, ../sass/style.scss */
+.menu_line {
+  height: 1.5px;
+  background: #fff;
+}
+
+/* line 71, ../sass/style.scss */
+.menu_line_1 {
+  width: 38px;
+}
+
+/* line 74, ../sass/style.scss */
+.menu_line_2 {
+  width: 27px;
+  background-color: #fdf4b2;
+}
+
+/* line 78, ../sass/style.scss */
+.menu_line_3 {
+  width: 45px;
+}
+
+/* line 81, ../sass/style.scss */
+.border_link {
+  display: block;
+  padding: 6px 10px;
+  border: 1px solid #fdf4b2;
+  color: #fdf4b2;
+  text-transform: lowercase;
+}
+
+/* line 88, ../sass/style.scss */
+.webkam_item svg {
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+/* line 93, ../sass/style.scss */
+.left_nav, .right_nav {
+  width: 35%;
+}
+
+/* line 96, ../sass/style.scss */
+.nav_logo {
+  width: 220px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+}
+
+/* line 103, ../sass/style.scss */
+.lang_select .active {
+  font-weight: 500;
+  color: #fdf4b2;
+}
+
+/* line 107, ../sass/style.scss */
+.header {
+  height: 100vh;
+  width: 100%;
+}
+
+/* line 111, ../sass/style.scss */
+.gallery__item {
+  height: 100vh;
+}
+
+/* line 114, ../sass/style.scss */
+.gitem__1 {
+  background: url("/img/main/bg-1.jpg") center no-repeat;
+  background-size: cover;
+}
+
+/* line 118, ../sass/style.scss */
+.gitem__2 {
+  background: url("/img/gallery/gallery-3.jpg") center no-repeat;
+  background-size: cover;
+}
+
+/* line 122, ../sass/style.scss */
+.gitem__3 {
+  background: url("/img/gallery/gallery-9.jpg") center no-repeat;
+  background-size: cover;
+}
+
+/* line 126, ../sass/style.scss */
+.header_box {
+  position: absolute;
+  width: 100%;
+  max-width: 940px;
+  top: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+}
+
+/* line 135, ../sass/style.scss */
+.header_minutes {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  display: -webkit-flex;
+  -webkit-align-items: center;
+  line-height: 1.5;
+}
+/* line 142, ../sass/style.scss */
+.header_minutes .number {
+  font-size: 100px;
+}
+/* line 145, ../sass/style.scss */
+.header_minutes .yellow {
+  font-weight: bold;
+}
+
+/* line 149, ../sass/style.scss */
+.header_minutes_info {
+  padding-left: 10px;
+}
+
+/* line 153, ../sass/style.scss */
+.slider_prev, .slider_next {
+  cursor: pointer;
+}
