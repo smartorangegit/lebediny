@@ -282,30 +282,35 @@ ul.bxslider {
   color: white;
 }
 
-/* line 7, ../sass/style.scss */
+/* line 6, ../sass/style.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 9, ../sass/style.scss */
 body {
   font-family: "Avenir Next Cyr";
   color: #344162;
 }
 
-/* line 11, ../sass/style.scss */
+/* line 13, ../sass/style.scss */
 img {
   width: 100%;
   height: auto;
 }
 
-/* line 15, ../sass/style.scss */
+/* line 17, ../sass/style.scss */
 a {
   text-decoration: none;
   color: inherit;
 }
 
-/* line 19, ../sass/style.scss */
+/* line 21, ../sass/style.scss */
 .heavy {
   font-weight: 900;
 }
 
-/* line 23, ../sass/style.scss */
+/* line 25, ../sass/style.scss */
 .flex {
   display: flex;
   display: -webkit-flex;
@@ -315,17 +320,17 @@ a {
   -webkit-align-items: center;
 }
 
-/* line 26, ../sass/style.scss */
+/* line 28, ../sass/style.scss */
 .yellow {
   color: #fdf4b2;
 }
 
-/* line 29, ../sass/style.scss */
+/* line 31, ../sass/style.scss */
 .blue {
   color: #344162;
 }
 
-/* line 32, ../sass/style.scss */
+/* line 34, ../sass/style.scss */
 .wrapper {
   width: 100%;
   max-width: 1200px;
@@ -333,14 +338,36 @@ a {
   margin: 0 auto;
 }
 
-/* line 38, ../sass/style.scss */
+/* line 40, ../sass/style.scss */
 .content_name {
   font-size: 60px;
   color: white;
+  text-transform: uppercase;
+  font-weight: bolder;
   text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.4);
 }
 
-/* line 43, ../sass/style.scss */
+/* line 47, ../sass/style.scss */
+.button {
+  display: block;
+  width: 100%;
+  max-width: 250px;
+  padding: 14px 0;
+  font-size: 18px;
+  font-weight: bolder;
+  text-align: center;
+  text-transform: uppercase;
+  border: 3px solid #fdf4b2;
+  color: #fdf4b2;
+  background: rgba(0, 0, 0, 0.4);
+}
+/* line 59, ../sass/style.scss */
+.button > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* line 64, ../sass/style.scss */
 .nav {
   width: 100%;
   padding: 10px 0;
@@ -353,12 +380,12 @@ a {
   font-size: 16px;
 }
 
-/* line 54, ../sass/style.scss */
+/* line 75, ../sass/style.scss */
 .nav .wrapper {
   position: relative;
 }
 
-/* line 57, ../sass/style.scss */
+/* line 78, ../sass/style.scss */
 .nav_menu {
   flex-direction: column;
   -webkit-flex-direction: column;
@@ -368,31 +395,32 @@ a {
   align-items: flex-start;
   -webkit-align-items: flex-start;
   color: #fdf4b2;
+  cursor: pointer;
 }
 
-/* line 67, ../sass/style.scss */
+/* line 89, ../sass/style.scss */
 .menu_line {
   height: 1.5px;
   background: #fff;
 }
 
-/* line 71, ../sass/style.scss */
+/* line 93, ../sass/style.scss */
 .menu_line_1 {
   width: 38px;
 }
 
-/* line 74, ../sass/style.scss */
+/* line 96, ../sass/style.scss */
 .menu_line_2 {
   width: 27px;
   background-color: #fdf4b2;
 }
 
-/* line 78, ../sass/style.scss */
+/* line 100, ../sass/style.scss */
 .menu_line_3 {
   width: 45px;
 }
 
-/* line 81, ../sass/style.scss */
+/* line 103, ../sass/style.scss */
 .border_link {
   display: block;
   padding: 6px 10px;
@@ -401,18 +429,18 @@ a {
   text-transform: lowercase;
 }
 
-/* line 88, ../sass/style.scss */
+/* line 110, ../sass/style.scss */
 .webkam_item svg {
   display: inline-block;
   vertical-align: bottom;
 }
 
-/* line 93, ../sass/style.scss */
+/* line 115, ../sass/style.scss */
 .left_nav, .right_nav {
   width: 35%;
 }
 
-/* line 96, ../sass/style.scss */
+/* line 118, ../sass/style.scss */
 .nav_logo {
   width: 220px;
   position: absolute;
@@ -421,76 +449,131 @@ a {
   -webkit-transform: translateX(-50%);
 }
 
-/* line 103, ../sass/style.scss */
+/* line 125, ../sass/style.scss */
 .lang_select .active {
   font-weight: 500;
   color: #fdf4b2;
 }
 
-/* line 107, ../sass/style.scss */
+/* line 129, ../sass/style.scss */
 .header {
   height: 100vh;
   width: 100%;
 }
 
-/* line 111, ../sass/style.scss */
+/* line 133, ../sass/style.scss */
 .gallery__item {
   height: 100vh;
 }
 
-/* line 114, ../sass/style.scss */
+/* line 136, ../sass/style.scss */
 .gitem__1 {
   background: url("/img/main/bg-1.jpg") center no-repeat;
   background-size: cover;
 }
 
-/* line 118, ../sass/style.scss */
+/* line 140, ../sass/style.scss */
 .gitem__2 {
   background: url("/img/gallery/gallery-3.jpg") center no-repeat;
   background-size: cover;
 }
 
-/* line 122, ../sass/style.scss */
+/* line 144, ../sass/style.scss */
 .gitem__3 {
   background: url("/img/gallery/gallery-9.jpg") center no-repeat;
   background-size: cover;
 }
 
-/* line 126, ../sass/style.scss */
+/* line 148, ../sass/style.scss */
 .header_box {
   position: absolute;
   width: 100%;
   max-width: 940px;
-  top: 150px;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
   color: #fff;
 }
 
-/* line 135, ../sass/style.scss */
+/* line 158, ../sass/style.scss */
+.header_box__left {
+  width: 60%;
+  border-right: 1px solid white;
+}
+
+/* line 162, ../sass/style.scss */
+.header_box__right {
+  width: 40%;
+  height: 380px;
+  background: url("/img/Round_logo.png") center no-repeat;
+}
+
+/* line 167, ../sass/style.scss */
+.box_controls {
+  text-align: center;
+  margin: 24px auto;
+}
+
+/* line 171, ../sass/style.scss */
 .header_minutes {
   font-size: 18px;
   display: flex;
   align-items: center;
   display: -webkit-flex;
   -webkit-align-items: center;
-  line-height: 1.5;
+  padding-left: 30px;
+  text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.4);
 }
-/* line 142, ../sass/style.scss */
+/* line 179, ../sass/style.scss */
 .header_minutes .number {
   font-size: 100px;
 }
-/* line 145, ../sass/style.scss */
+/* line 182, ../sass/style.scss */
 .header_minutes .yellow {
   font-weight: bold;
 }
 
-/* line 149, ../sass/style.scss */
+/* line 186, ../sass/style.scss */
 .header_minutes_info {
+  line-height: 1.5;
   padding-left: 10px;
 }
 
-/* line 153, ../sass/style.scss */
+/* line 190, ../sass/style.scss */
 .slider_prev, .slider_next {
   cursor: pointer;
+}
+
+/* line 193, ../sass/style.scss */
+.line_left, .line_right {
+  width: 100%;
+  height: 1px;
+  max-width: 520px;
+  position: relative;
+  padding: 0px 10px;
+  margin: 10px 0;
+  background: white;
+}
+
+/* line 202, ../sass/style.scss */
+.line_left::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background: inherit;
+  border-radius: 100%;
+  top: -10px;
+}
+
+/* line 212, ../sass/style.scss */
+.header .button {
+  margin: 20px auto;
+}
+
+/* line 215, ../sass/style.scss */
+.header .content_name {
+  padding-left: 60px;
+  padding-top: 80px;
 }
