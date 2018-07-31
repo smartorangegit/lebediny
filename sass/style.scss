@@ -70,7 +70,7 @@ a{
   position: relative;
   padding: 0px 10px;
   margin: 10px 0;
-  background: white;
+  background: $blue;
 }
 .line_left::before{
   content: '';
@@ -97,10 +97,10 @@ a{
   width: 100%;
   padding: 10px 0;
   background: rgba(0,0,0,.5);
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 2;
   color: white;
   font-size: 16px;
 }
@@ -193,6 +193,8 @@ a{
   color: #fff;
   .line_left{
     max-width: 520px;
+    background: white;
+
   }
 }
 .header_box__left{
@@ -260,10 +262,7 @@ a{
 .one{
   padding: 40px 0;
   overflow: hidden;
-  .line_right{
-    background-color: $blue;
   }
-}
 .section_name{
   font-weight: 500;
   font-size: 24px;
@@ -718,6 +717,18 @@ figcaption{
   color: #ffffff;
   padding-top: 50px;
   padding-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  &:after{
+    content: url('/img/round_logo-footer.png');
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    left: calc(50% + 300px);
+    z-index: -1;
+top: 20px;
+  }
   .border_link{
     font-size: 18px;
     text-transform: uppercase;
@@ -746,6 +757,23 @@ figcaption{
   font-size: 30px;
   font-weight: 500;
 }
-.copyright{
+.footer .copyright{
   margin-top: 24px;
+  align-items: flex-end;
+  padding-bottom: 12px;
+  a{
+    display: inline-block;
+    margin: 0 6px;
+  }
 }
+.studio_link{
+  width: 100px;
+  display: inline-block;
+  span{
+    font-size: 12px;
+    text-transform: uppercase;
+    padding-left: 8px;
+  }
+}
+@import "_filter";
+@import "_map";
