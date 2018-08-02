@@ -3,6 +3,24 @@
 /* ==================================== */
 .filter{
   padding-top: 90px;
+  input[type="submit"]{
+    -webkit-appearance: none;
+    background: $blue;
+    width: 100%;
+    border: none;
+    max-width: 230px;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 12px;
+    color: #fff;
+    padding: 12px 0;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+  }
+  input[type="submit"]:hover{
+    background: darken($blue, 10%);
+  }
 }
 input[type="submit"] {
   outline: none;
@@ -121,24 +139,6 @@ input[type="submit"] {
 //   transition: 0.4s;
 //   -webkit-transition: 0.4s;
 // }
-input[type="submit"]{
-  -webkit-appearance: none;
-  background: $blue;
-  width: 100%;
-  border: none;
-  max-width: 230px;
-  text-align: center;
-  cursor: pointer;
-  display: inline-block;
-  font-size: 12px;
-  color: #fff;
-  padding: 12px 0;
-  transition: 0.4s;
-  -webkit-transition: 0.4s;
-}
-input[type="submit"]:hover{
-  background: darken($blue, 10%);
-}
 .filter_rev{
   color: #7f7f7f;
   font-size: 12px;
@@ -343,9 +343,10 @@ width: 8px;
     font-size: 16px;
     max-width: 300px;
   }
-  // input[type="submit"]{
-  //   width: 100%;
-  // }
+  input[type="submit"]{
+    max-width: 100%;
+    padding: 3px 10px;
+  }
 }
 .modal_flat_close{
   position: absolute;

@@ -4,16 +4,15 @@
 @import "_variables";
 @import "_slider";
 *{  box-sizing: border-box;}
+html{
+  height: 100%;
+}
 body{
   font-family: $avenir;
   color: $blue;
   letter-spacing: 0.06em;
   background-color: #fff;
-  *{
-    // transition: 0.4s;
-    // -webkit-transition: .4s;
   }
-}
 img{
   width: 100%;
   height: auto;
@@ -21,6 +20,7 @@ img{
 a{
   text-decoration: none;
   color: inherit;
+  outline: none;
 }
 .clearfix::after {
     content: "";
@@ -31,8 +31,11 @@ a{
 .flex {@include flex;}
 .yellow {color: $yellow;}
 .bold{font-weight: bolder;}
+.regular{font-weight: 400;}
+.demi{font-weight: 500;}
 .thin{font-weight: 100;}
 .blue {color:  $blue;}
+.upper{text-transform: uppercase;}
 .wrapper{
   width: 100%;
   max-width: 1200px;
@@ -777,3 +780,7 @@ top: 20px;
 }
 @import "_filter";
 @import "_map";
+@import "_news";
+@import "_building";
+@import "_developer";
+@import "_contacts";
