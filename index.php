@@ -10,6 +10,9 @@
   <body>
 
     <?php include 'includes/header.php'; ?>
+    <main>
+
+
 
       <div class="header">
       <ul class="header_gallery">
@@ -326,6 +329,7 @@
         </div>
       </div>
     </section>
+  </main>
 
     <!-- footer -->
 

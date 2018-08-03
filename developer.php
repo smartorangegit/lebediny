@@ -10,7 +10,7 @@
   <body class="body_developer">
 
     <?php include 'includes/header.php'; ?>
-    <section class="developer">
+    <main class="developer">
       <div class="wrapper flex">
           <div class="developer_item">
             <div class="developer_box">
@@ -39,11 +39,11 @@
             <span class="bold">«Perfect Group»</span>> – це надійність і якість за доступну ціну.
             Наша компанія знаходиться в постійному процесі підвищення стандартів якості доступного житла в Україні.
           </p>
-        
+
         </div>
       </div>
 
-    </section>
+    </main>
     <?php include 'includes/footer.php'; ?>
 
     </body>

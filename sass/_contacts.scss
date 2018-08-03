@@ -1,15 +1,32 @@
-section.contacts{
+main.contacts{
   padding-top: 90px;
 }
 .contacts_info{
   margin: 30px auto;
   text-align: center;
   line-height: 1.5;
+  position: relative;
+  z-index: 1;
+  .round_svg{
+    position: absolute;
+    z-index: -1;
+    left: 18%;
+    top: -20px;
+  }
 }
 .contacts_form{
+  position: relative;
+  z-index: 1;
   .section_name{
     text-align: center;
   }
+  .round_svg{
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    top: 0;
+  }
+  .thin{padding: 0 0 40px 60px;}
 }
 .form_inputs{
   width: 40%;
@@ -51,6 +68,7 @@ section.contacts{
     text-transform: uppercase;
     letter-spacing: 3px;
     font-size: 16px;
+    cursor: pointer;
   }
   textarea{
     width: 100%;

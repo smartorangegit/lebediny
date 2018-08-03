@@ -11,7 +11,7 @@
   <body>
 
     <?php include 'includes/header.php'; ?>
-    <section class="location">
+    <main class="location">
       <div class="wrapper flex">
         <div class="loc_left flex">
           <!-- <div class="flex"> -->
@@ -80,7 +80,7 @@
         </li>
         </ul>
       </div>
-    </section>
+    </main>
         <?php include 'includes/footer.php'; ?>
       <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3v4tMpbXGrrr2GY00coDwi9YeP4aqyA4&amp;language=uk&amp;ver=1.16"></script>
       <script type="text/javascript" src="/js/map.js"></script>

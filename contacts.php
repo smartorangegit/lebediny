@@ -11,12 +11,13 @@
   <body>
 
     <?php include 'includes/header.php'; ?>
-    <section class="contacts">
+    <main class="contacts">
       <div class="wrapper">
         <div class="section_name">Контакти</div>
         <div class="line_right"></div>
       <div class="contacts_info">
         <div class="section_name">
+          <svg  class="round_svg" height="60" viewBox="0 0 100 100" width="60" xmlns="http://www.w3.org/2000/svg"><ellipse cx="50" cy="50" fill="#fdf4b2" rx="50" ry="50" stroke-width=".3"/></svg>
           <p class="regular">
             Завжди раді Вам в нашому відділі продажу за адресою:
           </p>
@@ -32,6 +33,8 @@
         </div>
         <form class="main-form" action="#" method="post">
           <div class="form_inner flex">
+            <svg  class="round_svg" height="130" viewBox="0 0 100 100" width="130" xmlns="http://www.w3.org/2000/svg"><ellipse cx="50" cy="50" fill="#fdf4b2" rx="50" ry="50" stroke-width=".3"/></svg>
+
             <div class="form_inputs">
               <div class="placeholder">І&prime;мя *</div>
               <input type="name" name="" value="">
@@ -45,12 +48,9 @@
               <textarea name="textarea" rows="8" cols="80"></textarea>
               <input type="submit" name="" value="Надіслати повідомлення">
             </div>
-
           </div>
-
-
+          <p class="thin">Поля позначені зірочкою – обов’язкові для заповнення.</p>
         </form>
-
       </div>
     </div>
 
@@ -60,7 +60,7 @@
 
 
 
-    </section>
+    </main>
         <?php include 'includes/footer.php'; ?>
       <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3v4tMpbXGrrr2GY00coDwi9YeP4aqyA4&amp;language=uk&amp;ver=1.16"></script>
       <script type="text/javascript" src="/js/map.js"></script>

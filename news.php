@@ -10,7 +10,7 @@
   <body>
 
     <?php include 'includes/header.php'; ?>
-    <section class="news">
+    <main class="news">
       <div class="wrapper">
         <div class="section_name">
           Новини
@@ -85,7 +85,7 @@
           </ul>
         </div>
       </div>
-    </section>
+    </main>
         <?php include 'includes/footer.php'; ?>
     </body>
     </html>

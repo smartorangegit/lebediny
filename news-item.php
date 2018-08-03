@@ -10,7 +10,7 @@
   <body>
 
     <?php include 'includes/header.php'; ?>
-    <section class="news-item">
+    <main class="news-item">
       <div class="news-item-img">
 
       </div>
@@ -124,24 +124,8 @@
           <input type="submit" name="submit" value="Підписатися">
         </form>
       </div>
-
-
-
-
-
-    </section>
+    </main>
         <?php include 'includes/footer.php'; ?>
-        <script type="text/javascript">
-        $('.other_news_slider').bxSlider({
-          mode: 'vertical',
-          minSlides: 3,
-          maxSlides: 3,
-          pager: false,
-          moveSlides: 1,
-          prevText:'<svg enable-background="new 0 0 792 792" height="27" viewBox="0 0 792 422.39601" width="51" xmlns="http://www.w3.org/2000/svg"><path d="m422.396 26.396 369.604 369.604-26.396 26.396-369.604-369.603-369.604 369.603-26.396-26.396 396-396z" fill="#344162"/></svg>',
-          nextText:'<svg enable-background="new 0 0 792 792" height="27" viewBox="0 0 792 422.39601" width="51" xmlns="http://www.w3.org/2000/svg"><path d="m422.396 396 369.604-369.604-26.396-26.396-369.604 369.603-369.604-369.603-26.396 26.396 396 396z" fill="#344162"/></svg>',
-        });
 
-        </script>
     </body>
     </html>

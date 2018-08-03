@@ -3,6 +3,7 @@
 @import "compass/reset";
 @import "_variables";
 @import "_slider";
+@import "_menu";
 *{  box-sizing: border-box;}
 html{
   height: 100%;
@@ -72,7 +73,7 @@ a{
   max-width: 350px;
   position: relative;
   padding: 0px 10px;
-  margin: 10px 0;
+  margin: 10px 0 20px;
   background: $blue;
 }
 .line_left::before{
@@ -103,9 +104,16 @@ a{
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 2;
+  z-index: 4;
   color: white;
   font-size: 16px;
+  transition: 0.36s;
+  max-height: 60px;
+}
+.navigation-is-open .nav{
+  max-height: 0px;
+  padding: 0;
+  overflow: hidden;
 }
 .nav .wrapper{
   position: relative;
@@ -784,3 +792,4 @@ top: 20px;
 @import "_building";
 @import "_developer";
 @import "_contacts";
+@import "_akcii";

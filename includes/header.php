@@ -1,7 +1,7 @@
 <div class="nav">
   <div class="wrapper flex">
     <div class="left_nav flex">
-      <div id="menu" class="nav_item flex nav_menu">
+      <div id="menu" class="nav_item flex nav_menu cd-nav-trigger">
         <span style="margin-bottom:-1px;">Меню</span>
         <span class="menu_line menu_line_1"></span>
         <span class="menu_line menu_line_2"></span>
@@ -36,3 +36,36 @@
 </div>
 
 <!-- end header -->
+<div id="cd-nav" class="cd-nav">
+  <svg class="close_nav cd-nav-trigger" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50" height="50"><path d="M37.304 11.282l1.414 1.414-26.022 26.02-1.414-1.413z" fill="#ffffff"></path><path d="M12.696 11.282l26.022 26.02-1.414 1.415-26.022-26.02z" fill="#ffffff"></path></svg>
+
+  <div class="menu__logo" style="pointer-events: none;">
+    <img src="/img/letter_logo.svg" alt="ЖК Лебединый">
+  </div>
+  <div class="cd-navigation-wrapper">
+    <div class="cd-half-block">
+      <div class="half_block_one">
+        <div class="section_name"> меню </div>
+        <div class="line_right"> </div>
+        <ul class="cd-primary-nav">
+          <li><a href="/">Главная</a></li>
+          <li><a href="/filter.php">Выбор квартиры</a></li>
+          <li><a href="/location.php">Инфраструктура</a></li>
+          <li><a href="/news.php">Новости</a></li>
+          <li><a href="/building.php">Ход строительства</a></li>
+          <li><a href="/developer.php">Застройщик</a></li>
+          <li><a href="/akcii.php">Акции</a></li>
+          <li><a href="/contacts.php">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="menu__info">
+        <div class="section_name"> контакти </div>
+        <ul class="cd-primary-nav">
+          <li class="bold">вул. Ревуцького, 40</li>
+          <li class="bold">+38 044 299 45 89</li>
+        </ul>
+
+      </div>
+    </div><!-- .cd-half-block -->
+  </div> <!-- .cd-navigation-wrapper -->
+</div> <!-- .cd-nav -->

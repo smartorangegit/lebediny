@@ -11,7 +11,7 @@
   <body>
 
     <?php include 'includes/header.php'; ?>
-    <section class="building">
+    <main class="building">
       <div class="wrapper">
         <div class="section_name">
           WEB-камера
@@ -108,23 +108,10 @@
         </div>
       </div>
 
-    </section>
+    </main>
 
         <?php include 'includes/footer.php'; ?>
         <script src="/js/jquery.fancybox.js"></script>
-        <script type="text/javascript">
-        $('.building_slider').bxSlider({
-          touchEnabled: true,
-          minSlides: 3,
-          slideMargin: 5,
-          slideWidth: 230,
-          maxSlides: 5,
-          pager: false,
-          nextText:'<svg enable-background="new 0 0 792 792" height="45" viewBox="0 0 792 792" width="45" xmlns="http://www.w3.org/2000/svg"><path d="m580.802 369.604-369.604-369.604-26.396 26.396 369.603 369.604-369.603 369.604 26.396 26.396 396-396z" fill="#ffffff"/></svg>',
-          prevText:'<svg enable-background="new 0 0 792 792" height="45" viewBox="0 0 792 792" width="45" xmlns="http://www.w3.org/2000/svg"><path d="m580.802 369.604-369.604-369.604-26.396 26.396 369.603 369.604-369.603 369.604 26.396 26.396 396-396z" fill="#ffffff" transform="matrix(-1 0 0 1 792 0)"/></svg>',
 
-        });
-
-        </script>
     </body>
     </html>

@@ -9,7 +9,7 @@
   </head>
   <body>
     <?php include 'includes/header.php'; ?>
-    <section class="filter">
+    <main class="filter">
       <div class="wrapper">
         <div class="section_name">
           Вибір квартири
@@ -386,7 +386,7 @@
 
 
 
-</section>
+</main>
 
 
 
@@ -394,41 +394,6 @@
     <?php include 'includes/footer.php'; ?>
     <script src="js/ion.rangeSlider.js"></script>
     <script src="js/range.js"></script>
-    <script type="text/javascript">
-
-
-    $('tr[data-href]').on("mouseenter", function(e) {
-
-        var makets = $(this).find('a');
-        link_left = $(this).offset().left;
-        link_bottom = $(this).position().top;
-        makets[0].style.display = "block";
-        makets[0].style.position = "absolute";
-
-        var x = e.pageX/4;
-        var y = link_bottom - 150;
-
-        makets[0].style.left = "calc(50% - 97px)";
-        makets[0].style.top = y + "px";
-
-    });
-    $('tr[data-href]').on("mouseleave", function() {
-        var makets = $(this).find('a');
-        makets[0].style.display = "none";
-
-    });
-
-    $('tr[data-href]').click(function() {
-      $('.modal_flat').fadeIn()
-    });
-    $('.modal_flat_close').click(function(){
-      $('.modal_flat').fadeOut();
-    })
-
-
-
-
-    </script>
-
+    
   </body>
   </html>
