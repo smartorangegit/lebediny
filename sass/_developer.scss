@@ -42,3 +42,31 @@ main.developer{
     padding: 16px 0;
   }
 }
+@media only screen and (max-width: 768px) {
+  main.developer {
+    padding-top: 110px;
+    .wrapper{
+      flex-direction: column-reverse;
+      -webkit-flex-direction: column-reverse;
+      background: rgba(255,255,255,.6);
+    }
+}
+.developer_item {
+    width: 100%;
+}
+.developer_box {
+    width: 300px;
+    margin: 12px auto;
+}
+.developer_item:nth-child(2) {
+    padding-left: 0px;
+    line-height: 1.5;
+    p {
+   padding: 10px 0;
+}
+}
+
+
+
+
+}

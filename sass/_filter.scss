@@ -1,5 +1,5 @@
 /* ====================================*/
-/*!filter(1.2). (C) July 2018 Anna Begas. */
+/*!filter(Lebediny). (C) July 2018 Anna Begas. */
 /* ==================================== */
 .filter{
   padding-top: 90px;
@@ -309,14 +309,15 @@ width: 8px;
   left: 50%;
   transform: translate(-50%, -50%);
   display: none;
+  .section_name{
+    margin-bottom: 12px;
+    padding: 10px;
+    text-align: center;
+  }
 }
 .modal_flat_info{
   width: 28%;
   padding: 0 12px;
-  .section_name{
-    margin-bottom: 12px;
-    padding: 10px;
-  }
   td{
     padding: 3px 10px;
   }
@@ -596,4 +597,128 @@ width: 8px;
   color: #99a4ac;
 }
 .irs-disabled {
+}
+
+@media only screen and (max-width: 1024px) {
+
+}
+@media only screen and (max-width: 768px) {
+  .filter{
+    padding-top: 145px;
+  }
+  .param_inner{
+    flex-direction: column;
+    -webkit-flex-direction: column;
+  }
+  .param_inner_left,
+  .param_inner_right {
+      width: 100%;
+  }
+.checkbox__box{
+  align-items: baseline;
+  -webkit-align-items: baseline;
+}
+.filter_name {
+    font-size: 16px;
+    min-width: 80px;
+}
+.range_box .filter_name {
+  width: 100%;
+  text-align: center;
+}
+.filter_render img{
+  width: 100%;
+  max-width: 500px;
+}
+.range__item{
+  width: 100%;
+  padding: 14px 0;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+}
+.range_input{
+  width: 100%;
+  max-width: 320px;
+}
+.button__box {
+  margin: 0 0px 20px;
+  max-width: 360px;
+  margin: 0 auto;
+  &>*{
+    width: 45%;
+    max-width: 150px;
+  }
+}
+.filter input[type="submit"]{
+  max-width: 150px;
+}
+.filter__info {
+    color: #000;
+    padding: 20px 0;
+    line-height: 1.6;
+}
+table.results{
+  max-width: 340px;
+  margin: 0 auto;
+  th {
+    letter-spacing: 0px;
+    font-size: 11px;
+  }
+  th,  td{
+    width: auto;
+    min-width: 55px;
+    padding: 8px 0;
+  }
+ }
+table.results td{
+  font-size: 12px;
+}
+.umovi_info li{
+  line-height: 1.8;
+}
+.modal_flat{
+  border: 2px solid $blue;
+}
+.modal_flat_inner{
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+}
+.modal_flat_img{
+  width: 100%;
+  order: 0;
+  text-align: center;
+  img{
+    max-width: 300px;
+  }
+}
+.modal_flat_info {
+    order: 1;
+    width: 100%;
+    padding: 0 10px;
+    tbody{
+      font-size: 12px;
+    }
+}
+.modal_flat_form {
+    width: 100%;
+    order: 2;
+    padding: 0 10px;
+    input[type="submit"] {
+    max-width: none;
+}
+}
+
+}
+@media only screen and (max-width: 380px) {
+  table.results{
+    max-width: 340px;
+    th {
+      font-size: 8px;
+    }
+    th,  td{
+      width: auto;
+      min-width: 44px;
+      padding: 8px 0;
+    }
+  }
 }

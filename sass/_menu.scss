@@ -247,3 +247,41 @@ main {
     padding: 24px 34px;
 }
 }
+@media only screen and (max-width: 768px) {
+  .cd-nav{
+    padding: 20px 10px;
+  }
+  .menu__logo img {
+    width: 200px;
+    margin-left: 0;
+}
+.cd-nav .cd-navigation-wrapper{
+  padding: 0;
+}
+.cd-half-block{
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  &>*{
+    width: 100%;
+  }
+}
+.cd-half-block .section_name {
+    margin: 20px 0;
+}
+.cd-nav .cd-primary-nav a {
+    font-size: 20px;
+}
+.cd-nav .cd-primary-nav {
+    margin-top: 24px;
+}
+.close_nav{
+  width: 40px;
+  height: 40px;
+  top: 10px;
+  right: 10px;
+  }
+.menu__info  {
+  margin-bottom: 50px;
+}
+
+}

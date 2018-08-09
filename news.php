@@ -16,7 +16,7 @@
           Новини
         </div>
         <div class="line_right"></div>
-        <div class="news_prew">
+        <div class="news_prew isDesktop">
           <div class="news_box clearfix">
             <p>24 березня 2018 року</p>
             <p class="news_name">Установлены перекрытия цокольного этажа</p>

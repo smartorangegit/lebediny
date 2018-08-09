@@ -110,3 +110,31 @@ section.news-item{
     margin: 20px auto;
   }
 }
+@media only screen and (max-width: 1024px) {
+    .news_block .news_slider_item{
+    margin: 10px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  main.news {
+    padding-top: 130px;
+}
+.news_block .news_slider_item {
+    width: 100%;
+    max-width: 300px;
+    margin: 20px auto;
+}
+.news_body {
+    width: 100%;
+    line-height: 1.5;
+    margin-top: 20px;
+    padding-right: 0px;
+}
+.like_news{
+  margin: 20px 0;
+}
+
+
+
+
+}

@@ -1,6 +1,6 @@
 <div class="footer">
   <div class="wrapper flex">
-    <div class="footer_menu flex">
+    <div class="footer_menu flex isDesktop">
       <div class="footer_menu_item">
         <p class="menu_subname">Про проект</p>
         <ul class="menu_links">
@@ -11,7 +11,7 @@
           <li><a href="#">Контакти</a></li>
         </ul>
       </div>
-      <div class="footer_menu_item">
+      <div class="footer_menu_item ">
         <p class="menu_subname">КВАРТИРИ</p>
         <ul class="menu_links">
           <li><a href="#">ВСІ КВАРТИРИ</a></li>
@@ -30,7 +30,7 @@
   </div>
   <div class="wrapper copyright flex">
     <div class="">
-      © 2018 ЖК Лебединий, +38(044) 299 51 73 вул. Ревуцького, 40
+      © 2018 ЖК Лебединий<br class="isMobile"> +38(044) 299 51 73 <br class="isMobile"> вул. Ревуцького, 40
     </div>
     <div class="social_links">
       <a href="https://www.facebook.com/lebediniy/">

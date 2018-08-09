@@ -42,9 +42,11 @@
           <p class="bold">вул. Ревуцького, 40</p>
         </div>
       </div>
-      <div class="map_wrapper">
+      <div class="map_removeitem flex">
+
+      <div class="map_wrapper ">
         <div id="map" class="map-canvas"></div>
-        <div class="wrapper">
+        <div class="wrapper isDesktop">
           <div class="map_box_top">
             Вдале поєднання природи з чудово розвиненою інфраструктурою
           </div>
@@ -54,6 +56,8 @@
 
 
       <div class="wrapper">
+        <div class="section_name isMobile">Інфраструктура</div>
+        <div class="line_right isMobile"></div>
         <ul class="location-menu flex">
           <li onclick="filterMarkers($(this).attr('data-category'))" data-category="all">
             <span class="bold">Всі об'єкти</span>
@@ -80,6 +84,7 @@
         </li>
         </ul>
       </div>
+    </div>
     </main>
         <?php include 'includes/footer.php'; ?>
       <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3v4tMpbXGrrr2GY00coDwi9YeP4aqyA4&amp;language=uk&amp;ver=1.16"></script>

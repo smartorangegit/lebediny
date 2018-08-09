@@ -12,22 +12,22 @@
     <?php include 'includes/header.php'; ?>
     <main>
     <div class="header">
-      <ul class="header_gallery">
+      <ul class="header_gallery isDesktop">
         <li class="gallery__item gitem__2" data-minute="5" data-title="хвилин до метро" data-metro="Харківська"></li>
         <li class="gallery__item gitem__3" data-minute="20" data-title="хвилин на авто" data-metro="до вул.Хрещатик"></li>
         <li class="gallery__item gitem__1" data-minute="5" data-title="хвилини до" data-metro="найближчої школи"></li>
       </ul>
       <div class="header_box flex">
         <div class="header_box__left">
-          <div class="header_minutes">
+          <div class="header_minutes isDesktop">
             <div class="number heavy from_minute">5</div>
             <div class="header_minutes_info">
               <p class="from_title">хвилин до метро</p>
               <p class="yellow from_metro">Харківська</p>
             </div>
           </div>
-          <div class="line_left"></div>
-          <div class="box_controls">
+          <div class="line_left isDesktop"></div>
+          <div class="box_controls isDesktop">
             <span class="slider_prev">
               <svg height="15.5" viewBox="0 0 63.585762 19.414" width="50.8" xmlns="http://www.w3.org/2000/svg"><path d="m64 31h-60.586l7.293-7.293-1.561-1.414-9.146 9v1.414l9.146 9 1.488-1.414-7.22-7.293h60.586z" fill="#fff" transform="matrix(.99352751 0 0 1 0 -22.293)"/></svg>
             </span>
@@ -42,13 +42,13 @@
         </div>
         <div class="header_box__right">
           <div class="content_name">
-            <p class="wow fadeInRight" data-wow-duration="1.4s"  data-wow-delay=".2s" style="transition-delay: .2s;">коли</p>
-            <p class="wow fadeInRight" data-wow-duration="1.4s"  data-wow-delay=".5s" style="transition-delay: .5s;">все </p>
-            <p class="wow fadeInRight" data-wow-duration="1.4s"  data-wow-delay=".8s" style="transition-delay: .8s;">поруч</p>
+            <p class="p_animate" style="transition-delay:.0s;">коли</p>
+            <p class="p_animate" style="transition-delay:.2s;">все </p>
+            <p class="p_animate" style="transition-delay:.5s;">поруч </p>
         </div>
       </div>
     </div>
-      <a href="/developer" class="header_dev">
+      <a href="/developer.php" class="header_dev">
         <img src="/img/icons/perfect-w.svg" alt="Perfect Group">
         <span class="yellow">про забудовника</span>
       </a>
@@ -86,7 +86,8 @@
             </div>
           </div>
         </div>
-        <a href="#" class="button_arrow">
+
+        <a href="#" class="button_arrow isDesktop">
           Детальніше
           <svg height="12" viewBox="0 0 63.585762 19.414" width="44" xmlns="http://www.w3.org/2000/svg" fill="#344162"><path d="m9.146 22.293-9.146 9v1.414l9.146 9 1.488-1.414-7.22-7.293h60.586v-2h-60.586l7.293-7.293z"  transform="matrix(-.99352751 0 0 1 63.585761 -22.293)"/></svg>
         </a>
@@ -255,9 +256,9 @@
         <div class="flex">
           <div class="line_right"></div>
           <div class="six_link">
-            <a href="/windowview" class="bold">Дивитись види з вікон</a>
+            <a href="/windowview.php" class="bold"><span class="isDesktop">Дивитись</span> види з вікон</a>
             <span> | </span>
-            <a href="/bulding" class="bold">Дивитись хід будівництва</a>
+            <a href="/buillding.php" class="bold"><span class="isDesktop">Дивитись</span> хід будівництва</a>
           </div>
         </div>
       </div>
@@ -293,7 +294,7 @@
         </div>
         <div class="line_left"></div>
         <div class="seven_inner flex">
-          <div class="seven_info">
+          <div class="seven_info isDesktop">
             <svg  class="round_svg" height="130" viewBox="0 0 100 100" width="130" xmlns="http://www.w3.org/2000/svg"><ellipse cx="50" cy="50" fill="#fdf4b2" rx="50" ry="50" stroke-width=".3"/></svg>
             <div class="round_text">Надзвичайно зручне розташування</div>
             <p class="seven_text">

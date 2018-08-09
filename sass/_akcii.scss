@@ -57,3 +57,25 @@
     font-size: 24px;
   }
 }
+@media only screen and (max-width: 768px) {
+  .akcii {
+    padding-top: 130px;
+}
+  .akcii_slider_item {
+      background-position: top center;
+      background-size: auto 250px;
+      padding-top: 250px;
+      height: auto;
+  }
+  .akcii_info {
+    font-size: 14px;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 24px 0px;
+    line-height: 1.4;
+    position: relative;
+    top: 0;
+    transform: translateY(0%);
+    -webkit-transform: translateY(0%);
+}
+}

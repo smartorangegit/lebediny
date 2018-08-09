@@ -44,7 +44,7 @@
           </div>
 
         </div>
-        <div class="other_news_body">
+        <div class="other_news_body isDesktop">
           <div class="news_title upper">Вам также может быть интересно</div>
 
           <div class="other_news_slider">

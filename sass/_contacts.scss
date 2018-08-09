@@ -79,5 +79,28 @@ main.contacts{
     margin-bottom: 18px;
     height: 132px;
   }
+}
 
+@media only screen and (max-width: 768px) {
+  main.contacts{
+    padding-top: 130px;
+  }
+  .form_inner{
+    flex-direction: column;
+    max-width: 380px;
+    margin: 0 auto;
+    &> *{
+      width: 100%;
+      padding: 0 30px;
+    }
+  }
+.form_inputs{
+  margin: 20px 0 0 ;
+}
+.form_text{
+  margin: 0;
+}
+.form_inputs:after{
+  content: none;
+}
 }

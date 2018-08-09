@@ -9,7 +9,9 @@
 }
 .building{
   padding-top: 90px;
-  .bx-wrapper{
+}
+.building_block{
+  &+.bx-wrapper{
     margin: 30px auto;
     &:before, &:after{
       content: '';
@@ -26,14 +28,12 @@
       right: 0;
     }
     .bx-next {
-    right: 0px;
+      right: 0px;
     }
     .bx-prev{
       left: 0px;
     }
   }
-}
-.building_block{
   .section_name{
     text-align: right;
 
@@ -85,4 +85,30 @@
 .section_gallery_item__9{
   background-image: url('/img/views/view-1.jpg');
   background-size: cover;
+}
+
+@media only screen and (max-width: 768px) {
+  .building {
+      padding-top: 130px;
+  }
+  .building_block{
+    & +.bx-wrapper{
+      &:before, &:after {
+        width: 30px;
+      }
+      .bx-controls-direction a {
+        width: 30px;
+      }
+    }
+  }
+  .webcam_box iframe {
+    height: 220px;
+}
+.section_gallery1 {
+    height: 260px;
+}
+.windowView .wrapper_pager {
+    position: static;
+}
+
 }

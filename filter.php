@@ -141,7 +141,7 @@
             </div>
 
            <div class="button__box flex">
-             <span class="filter_rev">За вашими параметрами знайдено <span class="number_flats">0</span> квартир</span>
+             <span class="filter_rev isDesktop">За вашими параметрами знайдено <span class="number_flats">0</span> квартир</span>
              <input class="button" type="submit" value="Шукати">
              <a class="reset-button js-reset-filter-button" href="#" id="reset_button">Зкинути параметри</a>
            </div>
@@ -325,15 +325,35 @@
                         <td>3-A</td>
                       <td>1 817 252</td>
                  </tr>
+                 <tr data-href="" data-image="https://lebedinyiy.com.ua/wp-content/uploads/2017/dom2/sec4_floor2-21_flat3-A.png" data-bn="2" data-sn="4" data-floor="12" data-rooms="3" data-square="96.70" data-price="1817252">
+             				<td>2                <a class="maket"><img alt="План квартири ЖК Лебединий" src="https://lebedinyiy.com.ua/wp-content/uploads/2017/dom2/sec4_floor2-21_flat3-A.png"><span class="mask"></span>
+                             </a></td>
+                                     <td>4</td>
+                                     <td>12</td>
+                                     <td>3</td>
+                                     <td>96.7</td>
+                                     <td>3-A</td>
+                                   <td>1 817 252</td>
+                              </tr>
+                              <tr data-href="" data-image="https://lebedinyiy.com.ua/wp-content/uploads/2017/dom2/sec4_floor2-21_flat3-A.png" data-bn="2" data-sn="4" data-floor="12" data-rooms="3" data-square="96.70" data-price="1817252">
+                                  <td>2                <a class="maket"><img alt="План квартири ЖК Лебединий" src="https://lebedinyiy.com.ua/wp-content/uploads/2017/dom2/sec4_floor2-21_flat3-A.png"><span class="mask"></span>
+                                          </a></td>
+                                                  <td>4</td>
+                                                  <td>12</td>
+                                                  <td>3</td>
+                                                  <td>96.7</td>
+                                                  <td>3-A</td>
+                                                <td>1 817 252</td>
+                                           </tr>
 			</tbody>
 		</table>
 
 <div id="modal_flat" class="modal_flat">
+  <div class="section_name">3 кімнати , тип 3А</div>
   <div class="modal_flat_inner flex">
 
   <svg class="modal_flat_close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="60" height="60"><path d="M37.304 11.282l1.414 1.414-26.022 26.02-1.414-1.413z" fill="#344162"></path><path d="M12.696 11.282l26.022 26.02-1.414 1.415-26.022-26.02z" fill="#344162"></path></svg>
   <div class="modal_flat_info">
-    <div class="section_name">3 кімнати , тип 3А</div>
     <table class="modal_table">
       <tr><td>Житлова площа:</td><td>55,62 м.кв</td></tr>
       <tr><td>Загальна площа:</td><td>75,3 м.кв</td></tr>
@@ -394,6 +414,6 @@
     <?php include 'includes/footer.php'; ?>
     <script src="js/ion.rangeSlider.js"></script>
     <script src="js/range.js"></script>
-    
+
   </body>
   </html>
