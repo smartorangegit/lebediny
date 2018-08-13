@@ -51,7 +51,12 @@ jQuery(document).ready(function($){
 			if($(this).parents('.csstransitions').length > 0 ) isLateralNavAnimating = true;
 
 			$('body').toggleClass('navigation-is-open');
-			$('.cd-nav .line_right').toggleClass('line__active');
+      if ( $('body').hasClass('navigation-is-open')){
+        $('.cd-nav .line_right').addClass('line__active')
+      }
+      else {
+        $('.cd-nav .line_right').removeClass('line__active')
+      }
 			$('.cd-navigation-wrapper').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(){
 				//animation is over
 				isLateralNavAnimating = false;
@@ -183,9 +188,11 @@ $(window).scroll(function(){
 $(window).ready(function(){
   $('.animate_btn').addClass('animated_btn');
 	$('.p_animate').addClass('p_animated');
-	$('.developer .line_left').addClass('line__active');
+  $('.location .line_left').addClass('line__active');
 	$('.akcii .line_right').addClass('line__active');
 	$('.contacts .line_right').addClass('line__active');
+  $('.developer .line_right').addClass('line__active');
+  $('.gmnoprint').css('z-index', '-1');
 
 })
 

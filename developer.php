@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>ЖК Лебединий - Забудовник | Ревуцького 40</title>
+    <title>ЖК Лебединий - Девелопер | Ревуцького 40</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
     <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon.png">
     <link rel="stylesheet" href="/css/style.css">
@@ -20,9 +20,9 @@
           </div>
         <div class="developer_item">
           <div class="section_name">
-            Про забудовника
+            Девелопер
           </div>
-          <div class="line_left"></div>
+          <div class="line_right"></div>
           <p>
             <span class="bold">«Perfect Group»</span> – це комплексний підхід до будівництва.
           </p>

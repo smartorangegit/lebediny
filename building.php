@@ -38,42 +38,42 @@
         </div>
         <!-- end of one item from slider -->
         <div class="building_item building_item__2">
-          <a class="fancybox"  data-fancybox="mart28" data-caption="28 марта 2018 года" href="/img/build/1.jpg"></a>
-          <a class="fancybox"  data-fancybox="mart28" data-caption="28 марта 2018 года" href="/img/build/2.jpg"></a>
-          <a class="fancybox"  data-fancybox="mart28" data-caption="28 марта 2018 года" href="/img/build/3.jpg"></a>
-          <figcaption>28 марта 2018 года</figcaption>
+          <a class="fancybox"  data-fancybox="mart28" data-caption="26 марта 2018 года" href="/img/build/1.jpg"></a>
+          <a class="fancybox"  data-fancybox="mart28" data-caption="26 марта 2018 года" href="/img/build/2.jpg"></a>
+          <a class="fancybox"  data-fancybox="mart28" data-caption="26 марта 2018 года" href="/img/build/3.jpg"></a>
+          <figcaption>26 марта 2018 года</figcaption>
         </div>
 
         <div class="building_item building_item__3">
-          <a class="fancybox"  data-fancybox="mart28" data-caption="28 марта 2018 года" href="/img/build/1.jpg"></a>
-          <a class="fancybox"  data-fancybox="mart28" data-caption="28 марта 2018 года" href="/img/build/2.jpg"></a>
-          <a class="fancybox"  data-fancybox="mart28" data-caption="28 марта 2018 года" href="/img/build/3.jpg"></a>
-          <figcaption>28 марта 2018 года</figcaption>
+          <a class="fancybox"  data-fancybox="mart28" data-caption="20 марта 2018 года" href="/img/build/1.jpg"></a>
+          <a class="fancybox"  data-fancybox="mart28" data-caption="20 марта 2018 года" href="/img/build/2.jpg"></a>
+          <a class="fancybox"  data-fancybox="mart28" data-caption="20 марта 2018 года" href="/img/build/3.jpg"></a>
+          <figcaption>20 марта 2018 года</figcaption>
         </div>
 
         <div class="building_item building_item__4">
-          <a class="fancybox"  data-fancybox="mart28" data-caption="28 марта 2018 года" href="/img/build/1.jpg"></a>
-          <a class="fancybox"  data-fancybox="mart28" data-caption="28 марта 2018 года" href="/img/build/2.jpg"></a>
-          <a class="fancybox"  data-fancybox="mart28" data-caption="28 марта 2018 года" href="/img/build/3.jpg"></a>
-          <figcaption>28 марта 2018 года</figcaption>
+          <a class="fancybox"  data-fancybox="mart28" data-caption="10 марта 2018 года" href="/img/build/1.jpg"></a>
+          <a class="fancybox"  data-fancybox="mart28" data-caption="10 марта 2018 года" href="/img/build/2.jpg"></a>
+          <a class="fancybox"  data-fancybox="mart28" data-caption="10 марта 2018 года" href="/img/build/3.jpg"></a>
+          <figcaption>10 марта 2018 года</figcaption>
         </div>
 
         <div class="building_item building_item__5">
-          <a class="fancybox"  data-fancybox="mart28" data-caption="28 марта 2018 года" href="/img/build/1.jpg"></a>
-          <a class="fancybox"  data-fancybox="mart28" data-caption="28 марта 2018 года" href="/img/build/2.jpg"></a>
-          <a class="fancybox"  data-fancybox="mart28" data-caption="28 марта 2018 года" href="/img/build/3.jpg"></a>
-          <figcaption>28 марта 2018 года</figcaption>
+          <a class="fancybox"  data-fancybox="mart28" data-caption="5 марта 2018 года" href="/img/build/1.jpg"></a>
+          <a class="fancybox"  data-fancybox="mart28" data-caption="5 марта 2018 года" href="/img/build/2.jpg"></a>
+          <a class="fancybox"  data-fancybox="mart28" data-caption="5 марта 2018 года" href="/img/build/3.jpg"></a>
+          <figcaption>5 марта 2018 года</figcaption>
         </div>
 
         <div class="building_item building_item__6">
-          <a class="fancybox"  data-fancybox="mart28" data-caption="28 марта 2018 года" href="/img/build/1.jpg"></a>
-          <a class="fancybox"  data-fancybox="mart28" data-caption="28 марта 2018 года" href="/img/build/2.jpg"></a>
-          <a class="fancybox"  data-fancybox="mart28" data-caption="28 марта 2018 года" href="/img/build/3.jpg"></a>
-          <figcaption>28 марта 2018 года</figcaption>
+          <a class="fancybox"  data-fancybox="mart28" data-caption="1 марта 2018 года" href="/img/build/1.jpg"></a>
+          <a class="fancybox"  data-fancybox="mart28" data-caption="1 марта 2018 года" href="/img/build/2.jpg"></a>
+          <a class="fancybox"  data-fancybox="mart28" data-caption="1 марта 2018 года" href="/img/build/3.jpg"></a>
+          <figcaption>1 марта 2018 года</figcaption>
         </div>
       </div>
     </section>
-    <section class="windowView">
+    <section class="windowView" id="windowview">
       <div class="wrapper">
         <div class="section_name">
           Види з вікон

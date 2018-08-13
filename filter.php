@@ -16,7 +16,7 @@
         </div>
         <div class="line_right"></div>
       </div>
-      <div class="param_container">
+      <!-- <div class="param_container">
         <div class="param_inner wrapper flex">
           <div class="param_inner_left">
             <div class="checkbox__box flex">
@@ -100,17 +100,19 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="filter_render">
-        <div class="wrapper">
-          <img src="/img/plan-sekcii.jpg" alt="">
+      </div> -->
+      <div class="wrapper filter_inner flex">
+        <div class="filter_render">
+          <!-- <div class="wrapper"> -->
+            <img src="/img/plan-sekcii.jpg" alt="">
+          <!-- </div> -->
         </div>
-      </div>
-      <div class="section_name range_name">
-        Підбір за параметрами
-      </div>
+
         <div class="range_box">
-          <div class="wrapper flex range_inner">
+          <div class="section_name range_name">
+            Підбір за параметрами
+          </div>
+          <div class="flex range_inner">
             <div class="range__item flex">
               <div class="filter_name">Загальна площа, м.кв</div>
               <div class="range_input">
@@ -140,13 +142,14 @@
               </div>
             </div>
 
-           <div class="button__box flex">
-             <span class="filter_rev isDesktop">За вашими параметрами знайдено <span class="number_flats">0</span> квартир</span>
-             <input class="button" type="submit" value="Шукати">
-             <a class="reset-button js-reset-filter-button" href="#" id="reset_button">Зкинути параметри</a>
-           </div>
-         </div>
-       </div>
+            <div class="button__box flex">
+              <!-- <span class="filter_rev isDesktop">За вашими параметрами знайдено <span class="number_flats">0</span> квартир</span> -->
+              <input class="button" type="submit" value="Шукати">
+              <a class="reset-button js-reset-filter-button" href="#" id="reset_button">Зкинути параметри</a>
+            </div>
+          </div>
+        </div>
+      </div>
 
 
           <div class="filter__info">

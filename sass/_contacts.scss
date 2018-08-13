@@ -63,6 +63,8 @@ main.contacts{
     letter-spacing: 2px;
     color: $blue;
     padding: 12px;
+    border-radius: none;
+    -webkit-appearance: none;
   }
   input[type="submit"]{
     text-transform: uppercase;

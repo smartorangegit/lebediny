@@ -112,8 +112,14 @@ $(function() {
 
     // Create the map
     var map = new google.maps.Map($('.map-canvas')[0], {
-        zoom: 14,
+        zoom: 15,
         styles: mapStyle,
+        zoomControl: false,
+        mapTypeControl: false,
+        scaleControl: false,
+        streetViewControl: false,
+        // rotateControl: boolean,
+        fullscreenControl: false,
         center: new google.maps.LatLng(50.401867, 30.649769)
     });
 

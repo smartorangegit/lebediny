@@ -35,7 +35,7 @@
               <svg height="15.5" viewBox="0 0 63.585762 19.414" width="50.8" xmlns="http://www.w3.org/2000/svg"><path d="m9.146 22.293-9.146 9v1.414l9.146 9 1.488-1.414-7.22-7.293h60.586v-2h-60.586l7.293-7.293z" fill="#fff" transform="matrix(-.99352751 0 0 1 63.585761 -22.293)"/></svg>
             </span>
           </div>
-          <a href="#" class="button animate_btn">
+          <a href="/filter.php" class="button animate_btn button13">
             <span> Вибрати квартиру </span>
             <svg height="10" viewBox="0 0 16 16" width="10" xmlns="http://www.w3.org/2000/svg"><path d="m2 1v14l12-7z" fill="#fdf4b2"/></svg>
           </a>
@@ -60,34 +60,36 @@
           Чому саме Лебединий?
         </div>
         <div class="line_right"></div>
+
         <div class="one_inner flex">
+
           <div class="one_item">
-            <div class="one_img_box one_img_box__1">
-              <div class="img_name wow fadeInUp" data-wow-delay=".5s" style="transition-delay: 0.5s">
-                Виды из окна
-              </div>
+            <div class="description">
+              <div class="img_name wow fadeInUp">Виды из окна</div>
+              <div class="abstract">Возможность добраться в любую точку города быстро и без пробок.</div>
             </div>
+            <div class="one_img_box one_img_box__1"></div>
           </div>
+
           <div class="one_item">
-            <div class="one_img_box one_img_box__2">
-              <div class="img_name wow fadeInUp" data-wow-delay=".7s" style="transition-delay: 0.7s">
-                Метро у подъезда
-                <div class="img_text">
-                  Возможность добраться в любую точку города быстро и без пробок.
-                </div>
-              </div>
+            <div class="description">
+              <div class="img_name wow fadeInUp">Метро у подъезда</div>
+              <div class="abstract">Возможность добраться в любую точку города быстро и без пробок.</div>
             </div>
+            <div class="one_img_box one_img_box__2"></div>
           </div>
+
           <div class="one_item">
-            <div class="one_img_box one_img_box__3">
-              <div class="img_name wow fadeInUp" data-wow-delay=".9s" style="transition-delay: 0.9s">
-                Просторные квартиры
-              </div>
+            <div class="description">
+              <div class="img_name wow fadeInUp">Просторные квартиры</div>
+              <div class="abstract">Возможность добраться в любую точку города быстро и без пробок.</div>
             </div>
+            <div class="one_img_box one_img_box__3"></div>
           </div>
+
         </div>
 
-        <a href="#" class="button_arrow isDesktop">
+        <a href="/filter.php" class="button_arrow isDesktop">
           Детальніше
           <svg height="12" viewBox="0 0 63.585762 19.414" width="44" xmlns="http://www.w3.org/2000/svg" fill="#344162"><path d="m9.146 22.293-9.146 9v1.414l9.146 9 1.488-1.414-7.22-7.293h60.586v-2h-60.586l7.293-7.293z"  transform="matrix(-.99352751 0 0 1 63.585761 -22.293)"/></svg>
         </a>
@@ -224,21 +226,21 @@
             <figcaption>
               <p>24 марта 2018 г.</p>
               <p class="bold">Установлены перекрытия цокольного этажа</p>
-              <a href="/news_item">Читати</a>
+              <a href="/news_item.php">Читати</a>
             </figcaption>
           </div>
           <div class="news_slider_item news_slider_item_1">
             <figcaption>
               <p>24 марта 2018 г.</p>
               <p class="bold">Установлены перекрытия цокольного этажа</p>
-              <a href="/news_item">Читати</a>
+              <a href="/news_item.php">Читати</a>
             </figcaption>
           </div>
           <div class="news_slider_item news_slider_item_1">
             <figcaption>
               <p>24 марта 2018 г.</p>
               <p class="bold">Установлены перекрытия цокольного этажа</p>
-              <a href="/news_item">Читати</a>
+              <a href="/news_item.php">Читати</a>
             </figcaption>
           </div>
         </div>
@@ -256,9 +258,9 @@
         <div class="flex">
           <div class="line_right"></div>
           <div class="six_link">
-            <a href="/windowview.php" class="bold"><span class="isDesktop">Дивитись</span> види з вікон</a>
+            <a href="/building.php#windowview" class="bold"><span class="isDesktop">Дивитись</span> види з вікон</a>
             <span> | </span>
-            <a href="/buillding.php" class="bold"><span class="isDesktop">Дивитись</span> хід будівництва</a>
+            <a href="/building.php" class="bold"><span class="isDesktop">Дивитись</span> хід будівництва</a>
           </div>
         </div>
       </div>
@@ -300,7 +302,7 @@
             <p class="seven_text">
               Вдале поєднання природи з чудово розвиненою інфраструктурою
             </p>
-            <a href="#" class="button_arrow">
+            <a href="/location.php" class="button_arrow">
               Детальніше
               <svg height="12" viewBox="0 0 63.585762 19.414" width="44" xmlns="http://www.w3.org/2000/svg" fill="#344162"><path d="m9.146 22.293-9.146 9v1.414l9.146 9 1.488-1.414-7.22-7.293h60.586v-2h-60.586l7.293-7.293z" transform="matrix(-.99352751 0 0 1 63.585761 -22.293)"></path></svg>
             </a>

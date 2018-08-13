@@ -52,42 +52,42 @@
               <figcaption>
                 <p>24 марта 2018 г.</p>
                 <p class="bold">Установлены перекрытия цокольного этажа</p>
-                <a href="/news_item">Читати</a>
+                <a href="/news_item.php">Читати</a>
               </figcaption>
             </div>
             <div class="news_slider_item news_slider_item_1">
               <figcaption>
                 <p>24 марта 2018 г.</p>
                 <p class="bold">Установлены перекрытия цокольного этажа</p>
-                <a href="/news_item">Читати</a>
+                <a href="/news_item.php">Читати</a>
               </figcaption>
             </div>
             <div class="news_slider_item news_slider_item_1">
               <figcaption>
                 <p>24 марта 2018 г.</p>
                 <p class="bold">Установлены перекрытия цокольного этажа</p>
-                <a href="/news_item">Читати</a>
+                <a href="/news_item.php">Читати</a>
               </figcaption>
             </div>
             <div class="news_slider_item news_slider_item_1">
               <figcaption>
                 <p>24 марта 2018 г.</p>
                 <p class="bold">Установлены перекрытия цокольного этажа</p>
-                <a href="/news_item">Читати</a>
+                <a href="/news_item.php">Читати</a>
               </figcaption>
             </div>
             <div class="news_slider_item news_slider_item_1">
               <figcaption>
                 <p>24 марта 2018 г.</p>
                 <p class="bold">Установлены перекрытия цокольного этажа</p>
-                <a href="/news_item">Читати</a>
+                <a href="/news_item.php">Читати</a>
               </figcaption>
             </div>
             <div class="news_slider_item news_slider_item_1">
               <figcaption>
                 <p>24 марта 2018 г.</p>
                 <p class="bold">Установлены перекрытия цокольного этажа</p>
-                <a href="/news_item">Читати</a>
+                <a href="/news_item.php">Читати</a>
               </figcaption>
             </div>
           </div>
@@ -100,21 +100,21 @@
             <figcaption>
               <p>24 марта 2018 г.</p>
               <p class="bold">Установлены перекрытия цокольного этажа</p>
-              <a href="/news_item">Читати</a>
+              <a href="/news_item.php">Читати</a>
             </figcaption>
           </div>
           <div class="news_slider_item news_slider_item_1">
             <figcaption>
               <p>24 марта 2018 г.</p>
               <p class="bold">Установлены перекрытия цокольного этажа</p>
-              <a href="/news_item">Читати</a>
+              <a href="/news_item.php">Читати</a>
             </figcaption>
           </div>
           <div class="news_slider_item news_slider_item_1">
             <figcaption>
               <p>24 марта 2018 г.</p>
               <p class="bold">Установлены перекрытия цокольного этажа</p>
-              <a href="/news_item">Читати</a>
+              <a href="/news_item.php">Читати</a>
             </figcaption>
           </div>
         </div>

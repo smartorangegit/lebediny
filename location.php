@@ -44,7 +44,7 @@
       </div>
       <div class="map_removeitem flex">
 
-      <div class="map_wrapper ">
+      <div class="map_wrapper wrapper">
         <div id="map" class="map-canvas"></div>
         <div class="wrapper isDesktop">
           <div class="map_box_top">

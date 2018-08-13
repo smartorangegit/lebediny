@@ -1,5 +1,5 @@
 <div class="footer">
-  <div class="wrapper flex">
+  <div class="wrapper flex footer_inner_menu">
     <div class="footer_menu flex isDesktop">
       <div class="footer_menu_item">
         <p class="menu_subname">Про проект</p>
@@ -25,7 +25,7 @@
     <div class="footer_menu_item">
       <p class="menu_subname" style="color:#ffffff;">Відділ продажу:</p>
       <p class="footer_tel">+38 044 299 51 73</p>
-      <a href="#" class="border_link">Замовити дзвінок</a>
+      <a href="#" class="border_link button13">Замовити дзвінок</a>
     </div>
   </div>
   <div class="wrapper copyright flex">
