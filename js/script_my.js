@@ -74,11 +74,6 @@ $('#callback').click(function(e){
 	$('.overlay').fadeIn(300),
 	$('.modal_window').css('display','block').animate({opacity: 0.9,top: '46%'}, 200)
 });
-$('#callback2').click(function(e){
-	e.preventDefault();
-	$('.overlay').fadeIn(300),
-	$('.modal_window').css('display','block').animate({opacity: 0.9,top: '46%'}, 200)
-});
 
 $(document).on('click', '.close_modal_window', function(){
 	$('.modal_window').css('display','none'),
@@ -345,7 +340,7 @@ $(window).scroll(function(){
        e.preventDefault();
        $.ajax({
          url: "/wp-content/themes/smart_lebedyny/includes/view.php",
-         type: "GET",
+         type: "POST",
          cache:true,
          success: function(data){
            $("#ajaxGallery").html(data);

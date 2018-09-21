@@ -65,49 +65,49 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 @font-face {
   font-family: 'Avenir Next Cyr';
-  src: url("/wp-content/themes/smart_lebedyny/inc/fonts/AvenirNextCyr-Light.ttf") format("truetype");
+  src: url("/fonts/AvenirNextCyr-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
 }
 @font-face {
   font-family: 'Avenir Next Cyr';
-  src: url("/wp-content/themes/smart_lebedyny/inc/fonts/AvenirNextCyr-Demi.ttf") format("truetype");
+  src: url("/fonts/AvenirNextCyr-Demi.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
   font-family: 'Avenir Next Cyr';
-  src: url("/wp-content/themes/smart_lebedyny/inc/fonts/AvenirNextCyr-Medium.ttf") format("truetype");
+  src: url("/fonts/AvenirNextCyr-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: 'Avenir Next Cyr';
-  src: url("/wp-content/themes/smart_lebedyny/inc/fonts/AvenirNextCyr-Regular.ttf") format("truetype");
+  src: url("/fonts/AvenirNextCyr-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Avenir Next Cyr Ultra';
-  src: url("/wp-content/themes/smart_lebedyny/inc/fonts/AvenirNextCyr-UltraLight.ttf") format("truetype");
+  src: url("/fonts/AvenirNextCyr-UltraLight.ttf") format("truetype");
   font-weight: 200;
   font-style: normal;
 }
 @font-face {
   font-family: 'Avenir Next Cyr';
-  src: url("/wp-content/themes/smart_lebedyny/inc/fonts/AvenirNextCyr-Heavy.ttf") format("truetype");
+  src: url("/fonts/AvenirNextCyr-Heavy.ttf") format("truetype");
   font-weight: 900;
   font-style: normal;
 }
 @font-face {
   font-family: 'Avenir Next Cyr';
-  src: url("/wp-content/themes/smart_lebedyny/inc/fonts/AvenirNextCyr-Bold.ttf") format("truetype");
+  src: url("/fonts/AvenirNextCyr-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
   font-family: 'Avenir Next Cyr';
-  src: url("/wp-content/themes/smart_lebedyny/inc/fonts/AvenirNextCyr-Thin.ttf") format("truetype");
+  src: url("/fonts/AvenirNextCyr-Thin.ttf") format("truetype");
   font-weight: 100;
   font-style: normal;
 }
@@ -3364,7 +3364,7 @@ main {
   left: 0;
   height: 100%;
   width: 100%;
-  background: url("/wp-content/themes/smart_lebedyny/inc/img/menu-bg.jpg") no-repeat;
+  background: url("/img/menu-bg.jpg") no-repeat;
   background-size: cover;
   visibility: hidden;
   -webkit-transition: visibility 0s 0.85s;
@@ -3955,19 +3955,19 @@ a {
 
 /* line 235, ../sass/style.scss */
 .gitem__1 {
-  background: url("/wp-content/themes/smart_lebedyny/inc/img/main/bg-1.jpg") center no-repeat;
+  background: url("/img/main/bg-1.jpg") center no-repeat;
   background-size: cover;
 }
 
 /* line 239, ../sass/style.scss */
 .gitem__2 {
-  background: url("/wp-content/themes/smart_lebedyny/inc/img/gallery/gallery-3.jpg") center no-repeat;
+  background: url("/img/gallery/gallery-3.jpg") center no-repeat;
   background-size: cover;
 }
 
 /* line 243, ../sass/style.scss */
 .gitem__3 {
-  background: url("/wp-content/themes/smart_lebedyny/inc/img/gallery/gallery-9.jpg") center no-repeat;
+  background: url("/img/gallery/gallery-9.jpg") center no-repeat;
   background-size: cover;
 }
 
@@ -3998,7 +3998,7 @@ a {
 .header_box__right {
   width: 40%;
   height: 380px;
-  background: url("/wp-content/themes/smart_lebedyny/inc/img/Round_logo.png") center no-repeat;
+  background: url("/img/Round_logo.png") center no-repeat;
 }
 
 /* line 271, ../sass/style.scss */
@@ -4122,17 +4122,17 @@ a {
 
 /* line 364, ../sass/style.scss */
 .one_img_box__1 {
-  background-image: url("/wp-content/themes/smart_lebedyny/inc/img/main/bg-2.jpg");
+  background-image: url("/img/main/bg-2.jpg");
 }
 
 /* line 367, ../sass/style.scss */
 .one_img_box__2 {
-  background-image: url("/wp-content/themes/smart_lebedyny/inc/img/main/bg-4.jpg");
+  background-image: url("/img/main/bg-4.jpg");
 }
 
 /* line 370, ../sass/style.scss */
 .one_img_box__3 {
-  background-image: url("/wp-content/themes/smart_lebedyny/inc/img/main/bg-3.jpg");
+  background-image: url("/img/main/bg-3.jpg");
 }
 
 /* line 373, ../sass/style.scss */
@@ -4251,7 +4251,7 @@ figcaption {
 /* line 461, ../sass/style.scss */
 .two_item_2 {
   width: 75%;
-  background: url("/wp-content/themes/smart_lebedyny/inc/img/main/bg-5.jpg") center no-repeat;
+  background: url("/img/main/bg-5.jpg") center no-repeat;
   background-size: cover;
   height: 350px;
   position: relative;
@@ -4294,7 +4294,7 @@ figcaption {
 
 /* line 497, ../sass/style.scss */
 .two_item_3__1 .two_img_box {
-  background: url("/wp-content/themes/smart_lebedyny/inc/img/main/bg-6.jpg") center no-repeat;
+  background: url("/img/main/bg-6.jpg") center no-repeat;
   background-size: cover;
   position: relative;
 }
@@ -4310,7 +4310,7 @@ figcaption {
 }
 /* line 508, ../sass/style.scss */
 .two_item_3__2 .two_img_box {
-  background: url("/wp-content/themes/smart_lebedyny/inc/img/main/bg-7.jpg") center no-repeat;
+  background: url("/img/main/bg-7.jpg") center no-repeat;
   background-size: cover;
   position: relative;
   margin: 12px 0 0 auto;
@@ -4336,7 +4336,7 @@ figcaption {
 .two_item_4 .two_img_box {
   width: 92%;
   height: 270px;
-  background: url("/wp-content/themes/smart_lebedyny/inc/img/main/bg-8.jpg") center no-repeat;
+  background: url("/img/main/bg-8.jpg") center no-repeat;
   background-size: cover;
   position: relative;
   margin: 20px 0 0 auto;
@@ -4382,7 +4382,7 @@ figcaption {
 .three_item__1 {
   width: 40%;
   height: 100%;
-  background: url("/wp-content/themes/smart_lebedyny/inc/img/main/bg-9.jpg") center no-repeat;
+  background: url("/img/main/bg-9.jpg") center no-repeat;
   background-size: cover;
   position: relative;
 }
@@ -4391,7 +4391,7 @@ figcaption {
 .three_item__2 {
   width: 60%;
   height: 100%;
-  background: url("/wp-content/themes/smart_lebedyny/inc/img/main/bg-10.jpg") center no-repeat;
+  background: url("/img/main/bg-10.jpg") center no-repeat;
   background-size: cover;
 }
 
@@ -4411,7 +4411,7 @@ figcaption {
 /* line 590, ../sass/style.scss */
 .four .wrapper {
   min-height: 625px;
-  background: url("/wp-content/themes/smart_lebedyny/inc/img/main/bg-11.jpg") left no-repeat;
+  background: url("/img/main/bg-11.jpg") left no-repeat;
 }
 /* line 593, ../sass/style.scss */
 .four .wrapper .line_right {
@@ -4499,7 +4499,7 @@ figcaption {
 
 /* line 659, ../sass/style.scss */
 .news_slider_item_1 {
-  background: url("/wp-content/themes/smart_lebedyny/inc/img/main/bg-12.jpg") top no-repeat;
+  background: url("/img/main/bg-12.jpg") top no-repeat;
   background-size: 100% auto;
 }
 
@@ -4594,49 +4594,49 @@ figcaption {
 
 /* line 724, ../sass/style.scss */
 .section_gallery_item__1 {
-  background: url("/wp-content/themes/smart_lebedyny/inc/img/gallery/gallery-1.jpg") center no-repeat;
+  background: url("/img/gallery/gallery-1.jpg") center no-repeat;
   background-size: contain;
 }
 
 /* line 725, ../sass/style.scss */
 .section_gallery_item__2 {
-  background: url("/wp-content/themes/smart_lebedyny/inc/img/gallery/gallery-2.jpg") center no-repeat;
+  background: url("/img/gallery/gallery-2.jpg") center no-repeat;
   background-size: contain;
 }
 
 /* line 726, ../sass/style.scss */
 .section_gallery_item__3 {
-  background: url("/wp-content/themes/smart_lebedyny/inc/img/gallery/gallery-3.jpg") center no-repeat;
+  background: url("/img/gallery/gallery-3.jpg") center no-repeat;
   background-size: contain;
 }
 
 /* line 727, ../sass/style.scss */
 .section_gallery_item__4 {
-  background: url("/wp-content/themes/smart_lebedyny/inc/img/gallery/gallery-4.jpg") center no-repeat;
+  background: url("/img/gallery/gallery-4.jpg") center no-repeat;
   background-size: contain;
 }
 
 /* line 728, ../sass/style.scss */
 .section_gallery_item__5 {
-  background: url("/wp-content/themes/smart_lebedyny/inc/img/gallery/gallery-5.jpg") center no-repeat;
+  background: url("/img/gallery/gallery-5.jpg") center no-repeat;
   background-size: contain;
 }
 
 /* line 729, ../sass/style.scss */
 .section_gallery_item__6 {
-  background: url("/wp-content/themes/smart_lebedyny/inc/img/gallery/gallery-6.jpg") center no-repeat;
+  background: url("/img/gallery/gallery-6.jpg") center no-repeat;
   background-size: contain;
 }
 
 /* line 730, ../sass/style.scss */
 .section_gallery_item__7 {
-  background: url("/wp-content/themes/smart_lebedyny/inc/img/gallery/gallery-7.jpg") center no-repeat;
+  background: url("/img/gallery/gallery-7.jpg") center no-repeat;
   background-size: contain;
 }
 
 /* line 731, ../sass/style.scss */
 .section_gallery_item__8 {
-  background: url("/wp-content/themes/smart_lebedyny/inc/img/gallery/gallery-8.jpg") center no-repeat;
+  background: url("/img/gallery/gallery-8.jpg") center no-repeat;
   background-size: contain;
 }
 
@@ -4713,7 +4713,7 @@ figcaption {
 .seven_img {
   width: 70%;
   height: 470px;
-  background: url("/wp-content/themes/smart_lebedyny/inc/img/main/bg-13.jpg") center no-repeat;
+  background: url("/img/main/bg-13.jpg") center no-repeat;
   background-size: cover;
 }
 
@@ -4751,7 +4751,7 @@ figcaption {
 
 /* line 819, ../sass/style.scss */
 .footer {
-  background: url("/wp-content/themes/smart_lebedyny/inc/img/main/footer.jpg") center no-repeat;
+  background: url("/img/main/footer.jpg") center no-repeat;
   background-size: cover;
   color: #ffffff;
   padding-top: 50px;
@@ -4762,7 +4762,7 @@ figcaption {
 }
 /* line 828, ../sass/style.scss */
 .footer:after {
-  content: url("/wp-content/themes/smart_lebedyny/inc/img/round_logo-footer.png");
+  content: url("/img/round_logo-footer.png");
   width: 250px;
   height: 250px;
   position: absolute;
@@ -5159,7 +5159,7 @@ figcaption {
 
   /* line 1133, ../sass/style.scss */
   .header {
-    background: url("/wp-content/themes/smart_lebedyny/inc/img/main/mob-main.jpg") center no-repeat;
+    background: url("/img/main/mob-main.jpg") center no-repeat;
     height: auto;
     padding-bottom: 20px;
   }
@@ -5812,10 +5812,7 @@ table.results tbody {
 /* line 355, ../sass/_filter.scss */
 .modal_flat_form input[type="submit"] {
   max-width: 100%;
-  padding: 12px 10px;
-  display: block;
-  height: auto;
-  font-size: 18px;
+  padding: 3px 10px;
 }
 
 /* line 360, ../sass/_filter.scss */
@@ -6549,7 +6546,7 @@ main.news {
   margin: 30px auto;
   width: 100%;
   height: 560px;
-  background: url("/wp-content/themes/smart_lebedyny/inc/img/news/bg-news.jpg") right no-repeat;
+  background: url("/img/news/bg-news.jpg") right no-repeat;
 }
 
 /* line 10, ../sass/_news.scss */
@@ -6637,7 +6634,7 @@ main.news {
 /* line 75, ../sass/_news.scss */
 .news-item-img {
   height: 100vh;
-  background-image: url("/wp-content/themes/smart_lebedyny/inc/img/news/bg-news-item.jpg");
+  background-image: url("/img/news/bg-news-item.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -6790,32 +6787,32 @@ main.news {
 
 /* line 59, ../sass/_building.scss */
 .building_item__1 {
-  background-image: url("/wp-content/themes/smart_lebedyny/inc/img/build/1.jpg");
+  background-image: url("/img/build/1.jpg");
 }
 
 /* line 60, ../sass/_building.scss */
 .building_item__2 {
-  background-image: url("/wp-content/themes/smart_lebedyny/inc/img/build/2.jpg");
+  background-image: url("/img/build/2.jpg");
 }
 
 /* line 61, ../sass/_building.scss */
 .building_item__3 {
-  background-image: url("/wp-content/themes/smart_lebedyny/inc/img/build/3.jpg");
+  background-image: url("/img/build/3.jpg");
 }
 
 /* line 62, ../sass/_building.scss */
 .building_item__4 {
-  background-image: url("/wp-content/themes/smart_lebedyny/inc/img/build/4.jpg");
+  background-image: url("/img/build/4.jpg");
 }
 
 /* line 63, ../sass/_building.scss */
 .building_item__5 {
-  background-image: url("/wp-content/themes/smart_lebedyny/inc/img/build/5.jpg");
+  background-image: url("/img/build/5.jpg");
 }
 
 /* line 64, ../sass/_building.scss */
 .building_item__6 {
-  background-image: url("/wp-content/themes/smart_lebedyny/inc/img/build/6.jpg");
+  background-image: url("/img/build/6.jpg");
 }
 
 /* line 65, ../sass/_building.scss */
@@ -6846,7 +6843,7 @@ main.news {
 
 /* line 85, ../sass/_building.scss */
 .section_gallery_item__9 {
-  background-image: url("/wp-content/themes/smart_lebedyny/inc/img/views/view-1.jpg");
+  background-image: url("/img/views/view-1.jpg");
   background-size: cover;
 }
 
@@ -6906,10 +6903,10 @@ main.news {
 .body_developer .footer_inner_menu {
   display: none;
 }
-@media only screen and (min-height: 940px)and (min-width: 1200px) {
+@media only screen and (min-height: 890px)and (min-width: 1200px) {
   .body_developer .footer{
-    padding-top: 10px;
-    padding-bottom: 5px;
+    padding-top: 50px;
+    padding-bottom: 30px;
     transition: 0.4s;
   }
   .body_developer .footer_inner_menu {
@@ -7139,27 +7136,27 @@ main.contacts {
 
 /* line 10, ../sass/_akcii.scss */
 .akcii_slider_item__1 {
-  background-image: url("/wp-content/themes/smart_lebedyny/inc/img/akcii/ac-1.jpg");
+  background-image: url("/img/akcii/ac-1.jpg");
 }
 
 /* line 11, ../sass/_akcii.scss */
 .akcii_slider_item__2 {
-  background-image: url("/wp-content/themes/smart_lebedyny/inc/img/akcii/ac-2.jpg");
+  background-image: url("/img/akcii/ac-2.jpg");
 }
 
 /* line 12, ../sass/_akcii.scss */
 .akcii_slider_item__3 {
-  background-image: url("/wp-content/themes/smart_lebedyny/inc/img/akcii/ac-3.jpg");
+  background-image: url("/img/akcii/ac-3.jpg");
 }
 
 /* line 13, ../sass/_akcii.scss */
 .akcii_slider_item__4 {
-  background-image: url("/wp-content/themes/smart_lebedyny/inc/img/akcii/ac-4.jpg");
+  background-image: url("/img/akcii/ac-4.jpg");
 }
 
 /* line 14, ../sass/_akcii.scss */
 .akcii_slider_item__5 {
-  background-image: url("/wp-content/themes/smart_lebedyny/inc/img/akcii/ac-5.jpg");
+  background-image: url("/img/akcii/ac-5.jpg");
 }
 
 /* line 16, ../sass/_akcii.scss */

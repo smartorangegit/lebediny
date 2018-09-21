@@ -1,124 +1,101 @@
-// tmas=['room','floor','area'];
-// var slider=[];
-// var $range=[];
-// 	for(i=0; i<tmas.length; i++){
-// 		$range[i]= $("#"+tmas[i]);
-// 	}
-//
-// //Кнопка reset
-// $('#reset').click(function(){
-//
-// for(i=0; i<tmas.length; i++){
-// slider[i] = $range[i].data("ionRangeSlider");
-// }
-// slider[0].reset();
-// slider[1].reset();
-// slider[2].reset();
-// });
-//
-// function AddFilter(){
-// 	console.log(1111);
-// 	var n=[];
-// 	for(i=0; i<tmas.length; i++){
-// str=document.getElementById(tmas[i]+"_min_max").value;
-//
-// n[tmas[i]]=str.split('/');
-// n[tmas[i]][0]=Number(n[tmas[i]][0]);
-// n[tmas[i]][1]=Number(n[tmas[i]][1]);
-//
-// 			$range[i].ionRangeSlider( {
-// 			min: n[tmas[i]][0],
-//             max: n[tmas[i]][1],
-//             from: n[tmas[i]][0],
-//             to: n[tmas[i]][1],
-//             type: 'double',
-// 		   hide_min_max: true,
-// 			 onChange: function(data){
-// 				 $('.results_box').addClass('blured');
-//
-// 	     },
-// 			onFinish: function(data){
-// 				$('.results_box').removeClass('blured');
-//
-// 				updateInputs()
-// 			},
-// 			onUpdate: updateInputs
-//
-// 			}
-// );
-// }
-//
-// 	function updateInputs (data) {
-// 	var vals=[];
-// 	for(i=0; i<tmas.length; i++){
-// 		vals[i]=$("#"+tmas[i]).data("ionRangeSlider");
-// }
-// 	data = $('.sort');
-// 	for(i=0; i<data.length; i++){
-//
-// 	if(	data[i].dataset.room>=vals[0].old_from  && data[i].dataset.room<=vals[0].old_to &&
-// 		data[i].dataset.floor>=vals[1].old_from && data[i].dataset.floor<=vals[1].old_to &&
-// 		data[i].dataset.area>=vals[2].old_from && data[i].dataset.area<=vals[2].old_to
-//
-// 		){
-// 	data[i].style.display='table-row';
-// 	}else{
-// 	data[i].style.display='none';
-// 	}}
-// 		}
-// }
-//  AddFilter();
+// Andrey 2018/08/16
+(function() {
 
- $("#price").ionRangeSlider({
-    type: "double",
-    grid: true,
-    min: 200000,
-    max: 2000000,
-    from: 200000,
-    to: 2000000,
-    hide_min_max: true,
-    grid: false
-});
-$("#square").ionRangeSlider({
-	 type: "double",
-	 grid: true,
-	 min: 44,
-	 max: 172,
-	 from: 44,
-	 to: 172,
-	 hide_min_max: true,
-	 grid: false
-});
-$("#rFloor").ionRangeSlider({
-	 type: "double",
-	 grid: true,
-	 min: 2,
-	 max: 25,
-	 from: 2,
-	 to: 25,
-	 hide_min_max: true,
-	 grid: false
-});
-$("#rKimnat").ionRangeSlider({
-	type: "double",
-	grid: true,
-	min: 1,
-	max: 4,
-	from: 1,
-	to: 4,
-	hide_min_max: true,
-	grid: false
-});
+	var filter = {
+		squareRange: {
+			min: '',
+			max: ''
+		},
+		floorRange: {
+			min: '',
+			max: ''
+		},
+		kimnatRange: {
+			min: '',
+			max: ''
+		},
+		priceRange: {
+			min: '',
+			max: ''
+		}
+	};
 
-  // скрипт для выравнивания последней строки флекс-бокса в разделе filter.php /Anna/
-var emptyCells, i;
+	function setFilter(ionRange, range) {
+		filter[range.id].min = ionRange.from;
+		filter[range.id].max = ionRange.to;
+	};
 
-$('.with-empty-cells').each(function() {
-emptyCells = [];
-for (i = 0; i < $(this).find('.cell').length; i++) {
-emptyCells.push($('<li>', {
-class: 'cell is-empty'
-}));
-}
-$(this).append(emptyCells);
-});
+	var ranges = document.querySelectorAll('.range-init');
+
+	var sliders = [];
+
+	ranges.forEach(function(range) {
+		$(range).ionRangeSlider({
+			type: "double",
+			grid: true,
+			min: range.value.split('/')[0],
+			max: range.value.split('/')[1],
+			from: range.value.split('/')[0],
+			to: range.value.split('/')[1],
+			hide_min_max: true,
+			grid: false,
+			onStart: function(ionRange) {
+				setFilter(ionRange, range);
+			},
+			onChange: function(ionRange) {
+				setFilter(ionRange, range);
+			}
+		})
+		sliders.push($(range).data("ionRangeSlider"));
+	});
+
+	var rows = document.querySelectorAll('.rows_c');
+
+	function Appartment(app) {
+		this.selector = app;
+		this.squareRange = parseInt(app.dataset.square);
+		this.floorRange = parseInt(app.dataset.floor);
+		this.kimnatRange = parseInt(app.dataset.rooms);
+		this.priceRange = parseInt(app.dataset.price);
+	}
+
+	var appartments = [];
+	rows.forEach(function(row){
+		appartments.push(new Appartment(row))
+	});
+
+	var searchBtn = document.querySelector('.button_search_js');
+	var resetBtn = document.querySelector('#reset_button');
+
+	document.getElementById("count_flats").innerHTML = appartments.length;
+
+	searchBtn.addEventListener('click', function() {
+		var totalAppartments = appartments.length;
+		var i = 0;
+		appartments.forEach(function(appartment){
+			$('body').addClass("onRanger");
+			appartment.selector.classList.add('filtered');
+			for(var key in filter) {
+				if(filter[key].min > appartment[key] || filter[key].max < appartment[key]) {
+					appartment.selector.classList.remove('filtered');
+					i++;
+					break;
+				}
+			}
+		});
+		document.getElementById("count_flats").innerHTML = totalAppartments - i <= 0 ? 0 : totalAppartments - i;
+	});
+
+	resetBtn.addEventListener('click', function(e) {
+		e.preventDefault();
+		sliders.forEach(function(slider) {
+			slider.reset();
+			slider.update({
+				from: slider.old_from,
+				to: slider.old_to
+			});
+			setFilter({from: slider.old_from, to: slider.old_to},slider.input)
+		});
+	});
+
+})();

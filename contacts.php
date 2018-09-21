@@ -10,7 +10,7 @@
   </head>
   <body>
 
-    <?php include 'includes/header.php'; ?>
+    <!-- <?php include 'includes/header.php'; ?> -->
     <main class="contacts">
       <div class="wrapper">
         <div class="section_name">Контакти</div>
