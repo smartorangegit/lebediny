@@ -4,6 +4,20 @@ Template Name: Головна
 */
 get_header();
 ?>
+<?
+$locale = get_locale();
+if($locale=='uk'|| $locale=='ua'){
+    $requestU = $_SERVER['REQUEST_URI'];
+    $locale = 'ua';
+    $requestU = str_replace('/ua','',$_SERVER['REQUEST_URI']);
+}
+if($locale=='ru_RU'){
+    $requestU = $_SERVER['REQUEST_URI'];
+    $locale = 'ru';
+    $requestU = str_replace('/ru','',$_SERVER['REQUEST_URI']);
+}
+
+?>
 
     <main>
         <div class="header">
@@ -17,7 +31,7 @@ get_header();
             <div class="header_box flex">
                 <div class="header_box__left">
                     <div class="header_minutes isDesktop">
-                        <div class="number heavy from_minute">5</div>
+                        <div class="number heavy from_minute yellow bold">5</div>
                         <div class="header_minutes_info">
                             <p class="from_title">хвилин до метро</p>
                             <p class="yellow from_metro">Харківська</p>
@@ -27,25 +41,28 @@ get_header();
                     <div class="box_controls isDesktop">
             <span class="slider_prev">
               <svg height="15.5" viewBox="0 0 63.585762 19.414" width="50.8" xmlns="http://www.w3.org/2000/svg"><path d="m64 31h-60.586l7.293-7.293-1.561-1.414-9.146 9v1.414l9.146 9 1.488-1.414-7.22-7.293h60.586z" fill="#fff" transform="matrix(.99352751 0 0 1 0 -22.293)"/></svg>
+              <span class="upper">prev</span>
             </span>
-                        <span class="slider_next">
+            <span> | </span>
+            <span class="slider_next">
+                          <span class="upper">next</span>
               <svg height="15.5" viewBox="0 0 63.585762 19.414" width="50.8" xmlns="http://www.w3.org/2000/svg"><path d="m9.146 22.293-9.146 9v1.414l9.146 9 1.488-1.414-7.22-7.293h60.586v-2h-60.586l7.293-7.293z" fill="#fff" transform="matrix(-.99352751 0 0 1 63.585761 -22.293)"/></svg>
             </span>
                     </div>
-                    <a href="/filter/" class="button animate_btn">
+                    <a href="/<?=$locale?>/filter/" class="button animate_btn">
                         <span> <?php _e('choose appartment','smart_lebedyny'); ?> </span>
                         <svg height="10" viewBox="0 0 16 16" width="10" xmlns="http://www.w3.org/2000/svg"><path d="m2 1v14l12-7z" fill="#fdf4b2"/></svg>
                     </a>
                 </div>
                 <div class="header_box__right">
                     <div class="content_name">
-                        <p class="p_animate" style="transition-delay:.0s;"><?php _e('when','smart_lebedyny'); ?></p>
-                        <p class="p_animate" style="transition-delay:.2s;"><?php _e('everything','smart_lebedyny'); ?></p>
-                        <p class="p_animate" style="transition-delay:.5s;"><?php _e('close','smart_lebedyny'); ?></p>
+                        <p class="p_animate bold" style="transition-delay:.0s;"><?php _e('when','smart_lebedyny'); ?></p>
+                        <p class="p_animate bold" style="transition-delay:.2s;"><?php _e('everything','smart_lebedyny'); ?></p>
+                        <p class="p_animate bold" style="transition-delay:.5s;"><?php _e('close','smart_lebedyny'); ?></p>
                     </div>
                 </div>
             </div>
-            <a href="/developer/" class="header_dev">
+            <a href="/<?=$locale?>/developer/" class="header_dev">
                 <img src="<?php echo get_template_directory_uri()?>/inc/img/icons/perfect-w.svg" alt="Perfect Group">
                 <span class="yellow"><?php _e('about developer','smart_lebedyny'); ?></span>
             </a>
@@ -86,7 +103,7 @@ get_header();
 
                 </div>
 
-                <a href="/filter/" class="button_arrow isDesktop">
+                <a href="/<?=$locale?>/filter/" class="button_arrow isDesktop">
                     <?php _e('details','smart_lebedyny'); ?>
                     <svg height="12" viewBox="0 0 63.585762 19.414" width="44" xmlns="http://www.w3.org/2000/svg" fill="#344162"><path d="m9.146 22.293-9.146 9v1.414l9.146 9 1.488-1.414-7.22-7.293h60.586v-2h-60.586l7.293-7.293z"  transform="matrix(-.99352751 0 0 1 63.585761 -22.293)"/></svg>
                 </a>
@@ -184,7 +201,7 @@ get_header();
                 <p>
                     <?php _e('optimal appartments','smart_lebedyny'); ?>
                 </p>
-                <a class="three_btn" href="/filter/">
+                <a class="three_btn" href="/<?=$locale?>/filter/">
                     <span><?php _e('choose appartment','smart_lebedyny'); ?></span>
                     <svg height="10" viewBox="0 0 16 16" width="10" xmlns="http://www.w3.org/2000/svg"><path d="m2 1v14l12-7z" fill="#344162"/></svg>
                 </a>
@@ -255,9 +272,9 @@ get_header();
                 <div class="flex">
                     <div class="line_right"></div>
                     <div class="six_link">
-                        <a href="/building/#windowview" class="bold" id="callGallery"> <?php _e('view from window','smart_lebedyny'); ?> </a>
+                        <a href="/<?=$locale?>/building/#windowview" class="bold" id="callGallery"> <?php _e('view from window','smart_lebedyny'); ?> </a>
                         <span> | </span>
-                        <a href="/building/" class="bold"><?php _e('view construction','smart_lebedyny'); ?> </a>
+                        <a href="/<?=$locale?>/building/" class="bold"><?php _e('view construction','smart_lebedyny'); ?> </a>
                     </div>
                 </div>
             </div>
@@ -299,7 +316,7 @@ get_header();
                         <p class="seven_text">
                             <?php _e('nature infrastructure','smart_lebedyny'); ?>
                         </p>
-                        <a href="/infrastructure/" class="button_arrow">
+                        <a href="/<?=$locale?>/infrastructure/" class="button_arrow">
                             <?php _e('details','smart_lebedyny'); ?>
                             <svg height="12" viewBox="0 0 63.585762 19.414" width="44" xmlns="http://www.w3.org/2000/svg" fill="#344162"><path d="m9.146 22.293-9.146 9v1.414l9.146 9 1.488-1.414-7.22-7.293h60.586v-2h-60.586l7.293-7.293z" transform="matrix(-.99352751 0 0 1 63.585761 -22.293)"></path></svg>
                         </a>

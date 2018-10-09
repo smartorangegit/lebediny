@@ -6636,7 +6636,7 @@ main.news {
 
 /* line 75, ../sass/_news.scss */
 .news-item-img {
-  height: 100vh;
+  height: 360px;
   background-image: url("/wp-content/themes/smart_lebedyny/inc/img/news/bg-news-item.jpg");
   background-size: cover;
   background-position: center;
@@ -6648,7 +6648,7 @@ main.news {
   width: 65%;
   line-height: 1.8;
   margin-top: 100px;
-  padding-right: 80px;
+  padding-right: 60px;
 }
 
 /* line 86, ../sass/_news.scss */
@@ -6702,6 +6702,10 @@ main.news {
     width: 100%;
     max-width: 300px;
     margin: 20px auto;
+  }
+  .news-item-img {
+    height: 160px;
+    margin-top: 80px;
   }
 
   /* line 127, ../sass/_news.scss */

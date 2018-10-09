@@ -337,9 +337,6 @@ $(window).scroll(function(){
 //
 // 	$("#ajaxGallery").load("/wp-content/themes/smart_lebedyny/includes/view.php",{action:"getContent", id:id});
 // });
-
-
-
   $(document).ready(function(){
      $("#callGallery").click(function(e){
        e.preventDefault();
@@ -353,3 +350,39 @@ $(window).scroll(function(){
        });
      });
   });
+
+
+///// jquery.progress
+$.fn.extend({Progress:function(e){var n={width:90,height:20,percent:0,backgroundColor:"#555",barColor:"#d9534f",fontColor:"#fff",radius:4,fontSize:12,increaseTime:1e3/60,increaseSpeed:1,animate:!0};$.extend(n,e);var i,t,r,a,o=$(this);function d(e){return!$.isNumeric(e)||e<0?0:100<e?100:e}var h={getWidth:function(){return n.width*n.percent/100},getPercent:function(e){return parseInt((100*e/n.width).toFixed(2))},animateWidth:function(e,t){a=setTimeout(function(){t<e?e-n.increaseSpeed<=t?e=t:e-=n.increaseSpeed:e<t&&(e+n.increaseSpeed>=t?e=t:e+=n.increaseSpeed),i.attr("width",e),r.empty().append(h.getPercent(e)+"%"),e!=t&&h.animateWidth(e,t)},n.increaseTime)}};function c(e){return document.createElementNS("http://www.w3.org/2000/svg",e)}function f(){var e=h.getWidth();if(n.animate){a&&clearTimeout(a);var t=parseFloat(i.attr("width"));t||(t=0),h.animateWidth(t,e)}else i.attr("width",e),r.empty().append(n.percent+"%")}return n.percent=d(n.percent),o.attr({width:n.width,height:n.height}),$(c("rect")).appendTo(o).attr({x:0,rx:n.radius,width:n.width,height:n.height,fill:n.backgroundColor}),i=$(c("rect")).appendTo(o).attr({x:0,rx:n.radius,height:n.height,fill:n.barColor}),t=$(c("g")).appendTo(o).attr({fill:"#fff","text-anchor":"middle","font-family":"DejaVu Sans,Verdana,Geneva,sans-serif","font-size":n.fontSize}),r=$(c("text")).appendTo(t).attr({x:n.width/2,y:n.height/2+n.fontSize/3,fill:n.fontColor}),f(),this.percent=function(e){return e&&(e=d(e),n.percent=e,f()),n.percent},this}});
+
+//// progress initialized
+for (var i=0; i<12; i++){
+	var t=$("#progress"+i).data('p');
+
+	$("#progress"+i).Progress({
+  percent: t, // 20%
+  width: 200,
+  height: 30,
+  backgroundColor: 'transparent',
+  barColor: '#344162',
+  fontColor: '#344162',
+  radius: 0,
+  fontSize: 16,
+  increaseTime: 1000.00/60.00,
+  increaseSpeed: 1,
+  animate: true
+});
+
+}
+
+///ход строительства слайдер инициализация
+$('.building_info_slider').bxSlider({
+  // mode: 'vertical',
+  minSlides: 1,
+  maxSlides: 1,
+  pager: false,
+  // adaptiveHeight: true,
+  moveSlides: 1,
+  nextText:'<svg enable-background="new 0 0 792 792" height="45" viewBox="0 0 792 792" width="45" xmlns="http://www.w3.org/2000/svg"><path d="m580.802 369.604-369.604-369.604-26.396 26.396 369.603 369.604-369.603 369.604 26.396 26.396 396-396z" fill="#344162"/></svg>',
+  prevText:'<svg enable-background="new 0 0 792 792" height="45" viewBox="0 0 792 792" width="45" xmlns="http://www.w3.org/2000/svg"><path d="m580.802 369.604-369.604-369.604-26.396 26.396 369.603 369.604-369.603 369.604 26.396 26.396 396-396z" fill="#344162" transform="matrix(-1 0 0 1 792 0)"/></svg>',
+});

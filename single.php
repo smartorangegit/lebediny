@@ -23,11 +23,11 @@ $od = $post->ID;
 ?>
 
 <main class="news-item">
-    <div class="news-item-img"  style="background-image: url(<?php if($img){ echo $img;}else{ the_field('news-archive-img'); } ?>);" >
-
-    </div>
     <div class="wrapper flex">
         <div class="news_body">
+					<div class="news-item-img"  style="background-image: url(<?php if($img){ echo $img;}else{ the_field('news-archive-img'); } ?>);" >
+
+					</div>
             <p class="news_date"><?php echo date('d.m.Y' , strtotime (get_field('news-date')))?></p>
             <div class="section_name bold">
                 <?=$post->post_title;?>
